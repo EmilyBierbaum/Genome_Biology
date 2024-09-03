@@ -8,4 +8,4 @@ This is the home for all of my work for my favorite class!
 [My sbatch file](https://github.com/EmilyBierbaum/Genome_Biology/blob/main/test.sbatch)
 
 
-![Duncan](Duncan.jpg)
+![](Duncan.jpg)

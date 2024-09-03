@@ -5,3 +5,7 @@ This is the home for all of my work for my favorite class!
 
 [Emily's Website](https://www.researchgate.net/profile/Emily-Bierbaum)
 
+[My sbatch file](https://github.com/EmilyBierbaum/Genome_Biology/blob/main/test.sbatch)
+
+
+![Duncan](Duncan.jpg)

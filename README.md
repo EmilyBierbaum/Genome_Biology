@@ -21,8 +21,8 @@
 - [Read_2_fastqc_output](read_2_fastqc.html)   
 
 #### Task Two was for sequence data quality control and adaptor trimming
-[ecoli trim sbatch](ecoli_trim.sbatch) 
-[e coli sh](ecoli_trim.sh) 
+- [e.coli trim sbatch](ecoli_trim.sbatch) 
+- [e.coli sh](ecoli_trim.sh) 
 
 #### Task Three conducted random sub-sampling and digital normalization
 - No script or sbatch files 
@@ -30,10 +30,12 @@
 - No script ot sbatch files 
 
 #### Task Five generates an index 
-[ecoli index sbatch](ecoli_trim.sbatch) 
-[ecoli index sh file](ecoli_index.sh)  
+- [e.coli index sbatch](ecoli_trim.sbatch) 
+- [e.coli index sh](ecoli_index.sh)  
 
 #### Task Six maps reads to the indexed reference sequence
+ - [e.coli bwa mem sbatch](ecoli_bwa_mem.sbatch)
+ - [ecoli bwa mem sh](ecoli_bwa_mem.sh) 
 
 #### Task Seven manipulates SAM file
 

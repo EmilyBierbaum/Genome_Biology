@@ -14,23 +14,44 @@
 
 ### Genomic Adventure Time
 #### We learned more about uploading and managing files on the super computer and activated the class environment via the notorious MAMBA.
-#### Task One 
+#### Task One evaluated the quality of Illumina data 
 - [e.coli fastqc sh](https://github.com/EmilyBierbaum/Genome_Biology/blob/main/ecoli_fastqc.sh)  
 - [e.coli sbatch file](https://github.com/EmilyBierbaum/Genome_Biology/blob/main/ecoli_fastqc.sbatch)  
-- [Read_1_fastqc_output](read_1_fastqc.html)  
-- [Read_2_fastqc_output](read_2_fastqc.html)  
+- [Read_1_fastqc_output](read_1_fastqc.html)   
+- [Read_2_fastqc_output](read_2_fastqc.html)   
 
-#### Task Two
-[ecoli trim sbatch file](ecoli_trim.sbatch)
-[e coli sh file](ecoli_trim.sh)
+#### Task Two was for sequence data quality control and adaptor trimming
+[ecoli trim sbatch](ecoli_trim.sbatch) 
+[e coli sh](ecoli_trim.sh) 
 
-#### Task Three
-[ecoli index sbatch file](ecoli_trim.sbatch)
-[ecoli index sh file](ecoli_index.sh)
+#### Task Three conducted random sub-sampling and digital normalization
+- No script or sbatch files 
+#### Task Four aligned Illumina data to a reference sequence 
+- No script ot sbatch files 
 
-#### Task Four
+#### Task Five generates an index 
+[ecoli index sbatch](ecoli_trim.sbatch) 
+[ecoli index sh file](ecoli_index.sh)  
 
-#### Task Five
+#### Task Six maps reads to the indexed reference sequence
+
+#### Task Seven manipulates SAM file
+
+#### Task Eight removes PCR duplicates
+
+#### Task Nine maps statistics
+
+#### Task Ten QualiMap
+
+#### Task 11 gives a graphical view of the alignments 
+
+#### Task 12 evaluates SNPs and indels
+
+#### Task 13 identifies SNPs and indels manually
+
+#### Task 14 automates analyses
+
+#### Task 15 locates genes that are missing compared to the reference 
 
 ## Project Proposal
 [Bierbaum proposal](Proposal.pdf)

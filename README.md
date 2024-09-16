@@ -27,7 +27,7 @@
 #### Task Three conducted random sub-sampling and digital normalization
 - No script or sbatch files 
 #### Task Four aligned Illumina data to a reference sequence 
-- No script ot sbatch files 
+- No script or sbatch files 
 
 #### Task Five generates an index 
 - [e.coli index sbatch](ecoli_trim.sbatch) 
@@ -38,6 +38,10 @@
  - [ecoli bwa mem sh](ecoli_bwa_mem.sh) 
 
 #### Task Seven manipulates SAM file
+- [e.coli samtools sbatch](ecoli_samtools_view.sbatch)
+- [e.coli samtools sh](ecoli_samtools_view.sh)
+- [e. coli map sort sbatch](ecoli_map_sort.sbatch)
+- [e.coli map sort sh](ecoli_map_sort.sh)
 
 #### Task Eight removes PCR duplicates
 

@@ -12,12 +12,25 @@
 - [sh file](https://github.com/EmilyBierbaum/Genome_Biology/blob/main/test.sh)
 
 
-### Day Two
+### Genomic Adventure Time
 #### We learned more about uploading and managing files on the super computer and activated the class environment via the notorious MAMBA.
+#### Task One 
 - [e.coli fastqc sh](https://github.com/EmilyBierbaum/Genome_Biology/blob/main/ecoli_fastqc.sh)  
 - [e.coli sbatch file](https://github.com/EmilyBierbaum/Genome_Biology/blob/main/ecoli_fastqc.sbatch)  
 - [Read_1_fastqc_output](read_1_fastqc.html)  
 - [Read_2_fastqc_output](read_2_fastqc.html)  
+
+#### Task Two
+[ecoli trim sbatch file](ecoli_trim.sbatch)
+[e coli sh file](ecoli_trim.sh)
+
+#### Task Three
+[ecoli index sbatch file](ecoli_trim.sbatch)
+[ecoli index sh file](ecoli_index.sh)
+
+#### Task Four
+
+#### Task Five
 
 ## Project Proposal
 [Bierbaum proposal](Proposal.pdf)

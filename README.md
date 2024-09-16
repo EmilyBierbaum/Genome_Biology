@@ -30,7 +30,7 @@
 - No script or sbatch files 
 
 #### Task Five generates an index 
-- [e.coli index sbatch](ecoli_trim.sbatch) 
+- [e.coli index sbatch](ecoli_index.sbatch) 
 - [e.coli index sh](ecoli_index.sh)  
 
 #### Task Six maps reads to the indexed reference sequence

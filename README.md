@@ -51,9 +51,9 @@
 - [e.coli samstool index sh](ecoli_samstool_index.sh)
 #### Task 9 maps statistics, and produced an output file. We cleaned up extra files (I entered these directly into the terminal but included them below)
 - [e.coli samtools flagstat sbatch](ecoli_samtools_flagstat.sbatch)
-- [e.ecoli samtools flagstat sh](ecoli_samtools_flagstat.sh)
+- [e.coli samtools flagstat sh](ecoli_samtools_flagstat.sh)
 - [mapping stats output file](mappingstats.txt)
-- [e. cleanup commands](ecoli_rm_files.sh)
+- [e.coli cleanup commands](ecoli_rm_files.sh)
 
 #### Task 10 QualiMap
 

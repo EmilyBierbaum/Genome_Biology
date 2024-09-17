@@ -13,7 +13,7 @@
 
 
 ### Genomic Adventure Time
-#### We learned more about uploading and managing files on the super computer and activated the class environment via the notorious MAMBA.
+#### We learned more about uploading and managing files on the super computer and activated the class environment with the notorious MAMBA.
 #### Task 1 evaluated the quality of Illumina data and created FastQC output reports
 - [e.coli fastqc sh](https://github.com/EmilyBierbaum/Genome_Biology/blob/main/ecoli_fastqc.sh)  
 - [e.coli sbatch file](https://github.com/EmilyBierbaum/Genome_Biology/blob/main/ecoli_fastqc.sbatch)  
@@ -27,10 +27,10 @@
 #### Task 3 discussed random sub-sampling and digital normalization via ChatGPT 😉
 - No script or sbatch files 
 
-#### Task 4 introduces how to align Illumina data to a reference sequence 
+#### Task 4 introduced how to align Illumina data to a reference sequence 
 - No script or sbatch files 
 
-#### Task 5 created a reference index. But first, we need to index the genome sequence with BWA! Not feeling confident enough to try minimap2 yet.
+#### Task 5 created a reference index. But first, we needed to index the genome sequence with BWA! Not feeling confident enough to try minimap2 yet.
 - [e.coli index sbatch](ecoli_index.sbatch) 
 - [e.coli index sh](ecoli_index.sh)  
 
@@ -38,18 +38,18 @@
  - [e.coli bwa mem sbatch](ecoli_bwa_mem.sbatch)
  - [ecoli bwa mem sh](ecoli_bwa_mem.sh) 
 
-#### Task 7 manipulated the SAM file and converted it to a BAM file, then we sort the BAM file
+#### Task 7 manipulated the SAM file and converted it to a BAM file, then we sorted the BAM file
 - [e.coli samtools sbatch](ecoli_samtools_view.sbatch)
 - [e.coli samtools sh](ecoli_samtools_view.sh)
 - [e. coli map sort sbatch](ecoli_map_sort.sbatch)
 - [e.coli map sort sh](ecoli_map_sort.sh)
 
-#### Task 8 removes PCR duplicates with samtools. We begin by sorting the BAM file by read name then add tags. Then we resort by chromosomal position. Finally we can makr duplicates and remove them.
+#### Task 8 removed PCR duplicates with samtools. We started by sorting the BAM file by read name then added tags. After we resorted by chromosomal position. Finally we marked duplicates and removed them.
 - [e.coli markdup sbatch](ecoli_markdup.sbatch)
 - [ecoli markdup sh](ecoli_markdup.sh)
-- [e.coli samstool index sbatch](ecoli_samstool_index.sbatch)
-- [e.coli samstool index sh](ecoli_samstool_index.sh)
-#### Task 9 maps statistics, and produced an output file. We cleaned up extra files (I entered these directly into the terminal but included them below)
+- [e.coli samstool index sbatch](ecoli_samtools_index.sbatch)
+- [e.coli samstool index sh](ecoli_samtools_index.sh)
+#### Task 9 mapped statistics, and produced an output file. We cleaned up extra files (I entered these directly into the terminal but included them below)
 - [e.coli samtools flagstat sbatch](ecoli_samtools_flagstat.sbatch)
 - [e.coli samtools flagstat sh](ecoli_samtools_flagstat.sh)
 - [mapping stats output file](mappingstats.txt)

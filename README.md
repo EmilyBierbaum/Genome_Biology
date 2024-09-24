@@ -55,17 +55,34 @@
 - [mapping stats output file](mappingstats.txt)
 - [e.coli cleanup commands](ecoli_rm_files.sh)
 
-#### Task 10 QualiMap
+#### Task 10 we used QualiMap to summarize the mapped alignment in greater detail. This produced an html output file.
+- [e.coli qualimap sbatch](qualimap_ecoli.sbatch)
+- [e.coli qualimap sh](qualimap_ecoli.sh)
+- [QualiMap output file](qualimapReport.html)
 
-#### Task 11 gives a graphical view of the alignments 
+#### Task 11 gave a graphical view of the alignments 
+- No script or sbatch files
+- We imported our E. coli reference sequence, annotation, and BAM alignment, to examine the coverage of the read pairs.
 
-#### Task 12 evaluates SNPs and indels
+#### Task 12 evaluated SNPs and indels
+- No scripts or sbatch files
+- Further explored the IGV program 
 
-#### Task 13 identifies SNPs and indels manually
+#### Task 13 identified SNPs and indels manually
+- No scripts or sbatch files
+- Do NOT try to manually identify SNPs and Indels... too tedious 
 
-#### Task 14 automates analyses
+#### Task 14 automated variant calling (predicting) with the package bcftools. We generated a pileup file that contains locations with the variants. Next we called again what bcftools thinks are the variant sites, then assumed the variants a ploidy of one. We then created a VCF file that can be loaded into IGV. 
+- [e.coli vcf sbatch](ecoli_vcf.sbatch)
+- [e.coli vcf sh](ecoli_vcf.sh)
+- [e.coli call sbatch](ecoli_call.sbatch)
+- [e.coli call sh](ecoli_call.sbatch)
+- [e.coli filt sbatch](ecoli_filt.sbatch)
+- [e.coli filt sh](ecoli_filt.sh)
 
-#### Task 15 locates genes that are missing compared to the reference 
+#### Task 15 located genes that are missing compared to the reference with the program BEDTools. It took a lot of blood, sweat, and tears but we completed the first part of the adventure. 😢
+- [e.ecoli cover sbatch](ecoli_cover.sbatch)
+- [e.coli cover sh](ecoli_cover.sh)
 
 ## Project Proposal
 [Bierbaum proposal](Proposal.pdf)

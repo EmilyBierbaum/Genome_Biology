@@ -14,7 +14,7 @@
 - [sh file](https://github.com/EmilyBierbaum/Genome_Biology/blob/main/test.sh)
 
 
-## Genomic Adventure Time
+# Genomic Adventure Time
 ## Chapter Two
 #### We learned more about uploading and managing files on the super computer and activated the class environment with the notorious MAMBA.
 #### Task 1 evaluated the quality of Illumina data and created FastQC output reports

@@ -94,11 +94,11 @@
 ## Chapter Three
 #### Task 1 we extracted the UNmapped reads, that did not map to the assembly. We then converted them from bam to fastq.
 - [bam to fastq sbatch](bam_to_fasta.sbatch)
-- [bam to fasta sh](bam_tofasta.sh)
+- [bam to fasta sh](bam_to_fasta.sh)
 
 #### Task 2 we checked the number of entired and headers for the two read fastq files produced. I used the `cat commands`. Then I repurposed the fastqc program sbatch and sh file to evaluate the QC.
 - [unmapped fastq sbatch](unmapped_fastqc.sbatch)
-- [unmapped fastqc sh](unmapped_fastqc.sh)
-  Check 'em out:
+- [unmapped fastqc sh](unmapped_fastqc.sh) 
+            Check 'em out:
 - [Read 1 unmapped fastqc report](unmapped_r1_fastqc.html)
 - [Read 2 unmapped fastqc report](unmapped_r2_fastqc.html)

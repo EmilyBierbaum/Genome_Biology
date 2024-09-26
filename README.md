@@ -99,6 +99,10 @@
 #### Task 2 we checked the number of entired and headers for the two read fastq files produced. I used the `cat commands`. Then I repurposed the fastqc program sbatch and sh file to evaluate the QC.
 - [unmapped fastq sbatch](unmapped_fastqc.sbatch)
 - [unmapped fastqc sh](unmapped_fastqc.sh) 
-            Check 'em out:
+- Check 'em out:
 - [Read 1 unmapped fastqc report](unmapped_r1_fastqc.html)
 - [Read 2 unmapped fastqc report](unmapped_r2_fastqc.html)
+
+- #### Task 3 we did a de novo assembly of our unmapped fastq file with the assembler SPAdes. I will definitely be using this program for my class project 🕶️
+- [unmapped SPAdes sbatch](unmapped_spades.sbatch)
+- [unmapped SPAdes sh](unmappe_spades.sh)

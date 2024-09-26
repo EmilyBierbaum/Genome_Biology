@@ -105,4 +105,4 @@
 
 - #### Task 3 we did a de novo assembly of our unmapped fastq file with the assembler SPAdes. I will definitely be using this program for my class project 🕶️
 - [unmapped SPAdes sbatch](unmapped_spades.sbatch)
-- [unmapped SPAdes sh](unmappe_spades.sh)
+- [unmapped SPAdes sh](unmapped_spades.sh)

@@ -4,6 +4,8 @@
 #### My name is Emily Bierbaum, and I am a 5th year PhD student in Dr. Bonett's lab studying the impact of life cycles on salamanders. Check out the lab website below:
 [Bonett Lab's Website](https://ronbonett.weebly.com/people.html)
 🦎 🐈 🐸
+## Project Proposal
+[Bierbaum proposal](Proposal.pdf)
 
 ## This is the home for all of my work for my favorite class!
 ### Day 1
@@ -12,13 +14,14 @@
 - [sh file](https://github.com/EmilyBierbaum/Genome_Biology/blob/main/test.sh)
 
 
-### Genomic Adventure Time
+## Genomic Adventure Time
+## Chapter Two
 #### We learned more about uploading and managing files on the super computer and activated the class environment with the notorious MAMBA.
 #### Task 1 evaluated the quality of Illumina data and created FastQC output reports
 - [e.coli fastqc sh](https://github.com/EmilyBierbaum/Genome_Biology/blob/main/ecoli_fastqc.sh)  
 - [e.coli sbatch file](https://github.com/EmilyBierbaum/Genome_Biology/blob/main/ecoli_fastqc.sbatch)  
-- [Read_1_fastqc_output](read_1_fastqc.html)   
-- [Read_2_fastqc_output](read_2_fastqc.html)   
+- [Read 1 fastqc report](read_1_fastqc.html)   
+- [Read 2 fastqc report](read_2_fastqc.html)   
 
 #### Task 2 was for sequence data quality control and adaptor trimming. We filtered low quality reads with Trim Galore!
 - [e.coli trim sbatch](ecoli_trim.sbatch) 
@@ -84,8 +87,18 @@
 - [e.ecoli cover sbatch](ecoli_cover.sbatch)
 - [e.coli cover sh](ecoli_cover.sh)
 
-## Project Proposal
-[Bierbaum proposal](Proposal.pdf)
-
-#### Duncan and I 🫶
+#### Duncan and I 🫶 --- Cute pic stop before Chapter 3 Genome Adventure ⛰️
 ![](Duncan.jpg)
+
+## Genomic Adventure Time x2
+## Chapter Three
+#### Task 1 we extracted the UNmapped reads, that did not map to the assembly. We then converted them from bam to fastq.
+- [bam to fastq sbatch](bam_to_fasta.sbatch)
+- [bam to fasta sh](bam_tofasta.sh)
+
+#### Task 2 we checked the number of entired and headers for the two read fastq files produced. I used the `cat commands`. Then I repurposed the fastqc program sbatch and sh file to evaluate the QC.
+- [unmapped fastq sbatch](unmapped_fastqc.sbatch)
+- [unmapped fastqc sh](unmapped_fastqc.sh)
+  Check 'em out:
+- [Read 1 unmapped fastqc report](unmapped_r1_fastqc.html)
+- [Read 2 unmapped fastqc report](unmapped_r2_fastqc.html)

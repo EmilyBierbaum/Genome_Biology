@@ -20,8 +20,8 @@
 #### Task 1 evaluated the quality of Illumina data and created FastQC output reports
 - [e.coli fastqc sh](https://github.com/EmilyBierbaum/Genome_Biology/blob/main/ecoli_fastqc.sh)  
 - [e.coli sbatch file](https://github.com/EmilyBierbaum/Genome_Biology/blob/main/ecoli_fastqc.sbatch)  
-- [Read 1 fastqc report](read_1_fastqc.html)   
-- [Read 2 fastqc report](read_2_fastqc.html)   
+  - [Read 1 fastqc report](read_1_fastqc.html)   
+  - [Read 2 fastqc report](read_2_fastqc.html)   
 
 #### Task 2 was for sequence data quality control and adaptor trimming. We filtered low quality reads with Trim Galore!
 - [e.coli trim sbatch](ecoli_trim.sbatch) 
@@ -55,13 +55,13 @@
 #### Task 9 mapped statistics, and produced an output file. We cleaned up extra files (I entered these directly into the terminal but included them below)
 - [e.coli samtools flagstat sbatch](ecoli_samtools_flagstat.sbatch)
 - [e.coli samtools flagstat sh](ecoli_samtools_flagstat.sh)
-- [mapping stats output file](mappingstats.txt)
-- [e.coli cleanup commands](ecoli_rm_files.sh)
+    - [mapping stats output file](mappingstats.txt)
+    - [e.coli cleanup commands](ecoli_rm_files.sh)
 
 #### Task 10 we used QualiMap to summarize the mapped alignment in greater detail. This produced an html output file.
 - [e.coli qualimap sbatch](qualimap_ecoli.sbatch)
 - [e.coli qualimap sh](qualimap_ecoli.sh)
-- [QualiMap output file](qualimapReport.html)
+   - [QualiMap output file](qualimapReport.html)
 
 #### Task 11 gave a graphical view of the alignments 
 - No script or sbatch files
@@ -100,13 +100,19 @@
 - [unmapped fastq sbatch](unmapped_fastqc.sbatch)
 - [unmapped fastqc sh](unmapped_fastqc.sh) 
 - Check 'em out:
-- [Read 1 unmapped fastqc report](unmapped_r1_fastqc.html)
-- [Read 2 unmapped fastqc report](unmapped_r2_fastqc.html)
+   - [Read 1 unmapped fastqc report](unmapped_r1_fastqc.html)
+   - [Read 2 unmapped fastqc report](unmapped_r2_fastqc.html)
 
-- #### Task 3 we did a de novo assembly of our unmapped fastq file with the assembler SPAdes. I will definitely be using this program for my class project 🕶️ Produced output files of parameters, contigs, scaffolds, and an assembly graph.
+#### Task 3 we did a de novo assembly of our unmapped fastq file with the assembler SPAdes. I will definitely be using this program for my class project 🕶️ Produced output files of parameters, contigs, scaffolds, and an assembly graph.
 - [unmapped SPAdes sbatch](unmapped_spades.sbatch)
 - [unmapped SPAdes sh](unmapped_spades.sh)
    - [parameters output](params.txt)
    - [contigs output](contigs.fasta)
    - [scaffold output](scaffolds.fasta)
    - [assembly graph output](assembly_graph.fastg)
+ 
+#### Task 4 used the program QUAST (quality assessment tool for genome assemblies) to examine statistics of our assembly. See report for details.
+- [unmapped QUAST sbatch](unmapped_quast.sbatch)
+- [unmapped QUAST sh](unmapped_quast.sh)
+    - [report file](report.txt)
+     

@@ -103,6 +103,10 @@
 - [Read 1 unmapped fastqc report](unmapped_r1_fastqc.html)
 - [Read 2 unmapped fastqc report](unmapped_r2_fastqc.html)
 
-- #### Task 3 we did a de novo assembly of our unmapped fastq file with the assembler SPAdes. I will definitely be using this program for my class project 🕶️
+- #### Task 3 we did a de novo assembly of our unmapped fastq file with the assembler SPAdes. I will definitely be using this program for my class project 🕶️ Produced output files of parameters, contigs, scaffolds, and an assembly graph.
 - [unmapped SPAdes sbatch](unmapped_spades.sbatch)
 - [unmapped SPAdes sh](unmapped_spades.sh)
+   - [parameters output](params.txt)
+   - [contigs output](contigs.fasta)
+   - [scaffold output](scaffolds.fasta)
+   - [assembly graph output](assembly_graph.fastag)

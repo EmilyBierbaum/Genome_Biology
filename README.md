@@ -109,4 +109,4 @@
    - [parameters output](params.txt)
    - [contigs output](contigs.fasta)
    - [scaffold output](scaffolds.fasta)
-   - [assembly graph output](assembly_graph.fastag)
+   - [assembly graph output](assembly_graph.fastg)

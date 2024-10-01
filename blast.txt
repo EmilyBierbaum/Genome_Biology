@@ -1,0 +1,7 @@
+blastn -db nt \
+-query contigs.fasta \
+-evalue 1e-06 \
+-num_threads 4 \
+-num_alignments 10 \
+-num_descriptions 10 \
+-out contigs.fasta.blastn

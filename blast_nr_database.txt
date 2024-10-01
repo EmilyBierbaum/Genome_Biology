@@ -1,0 +1,8 @@
+blastp -db nr \
+-query contigs.orf.fasta \
+-evalue 1e-06 \
+-num_threads 4 \
+-num_alignments 10 \
+-num_descriptions 10 \
+-outfmt '6 std stitle' \
+-out contigs.orf.blastp6

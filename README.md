@@ -116,14 +116,19 @@
 - [unmapped QUAST sh](unmapped_quast.sh)
     - [report file](report.txt)
  
-#### Task 5 analyzed our reads from the de no assembly. One method was to search contigs against NCBI nucleotide database with the BLAST (basic local alignment tool) command. However we DO NOT run this... But I attached the commands below for executing a BLAST search and making the output options more user friendly. We downloaded the precomputed results from Dr. Toomey and reviewed them 😃
+#### Task 5 analyzed our reads from the de novo assembly. One method was to search contigs against NCBI nucleotide database with the BLAST (basic local alignment tool) command. However we DO NOT run this... But I attached the commands below for executing a BLAST search and making the output options more user friendly. We downloaded the precomputed results from Dr. Toomey and reviewed them 😃
 - [BLAST command](blast.txt)
 - [BLAST output options](blast_output_options.txt)
 
-#### Task 6 we called open reading frames (ORFs) within the contigs (see output file). The ORFs can be searched against NCBI non-redundant database, we DID NOT run this but the command is below. Lastly we did a double check to make sure that the contigs did not appear in the reference sequence. Can never be toooo cautious!
+#### Task 6 called open reading frames (ORFs) within the contigs (see output file). The ORFs can be searched against NCBI non-redundant database, we DID NOT run this but the command is below. Lastly we did a double check to make sure that the contigs did not appear in the reference sequence. Can never be toooo cautious!
 - [unmapped ORF sbatch](unmapped_orf.sbatch)
 - [unmapped ORF sh](unmapped_orf.sh)
      - [Contigs ORF output fasta file](contigs.orf.fasta)
      - [NCBI nr blast search command](blast_nr_database.txt)
  - [unmapped BLASTn sbatch](unmapped_blastn.sbatch)
  - [unmapped BLASTn sh](unmapped_blastn.sh)
+
+#### Task 7 ran our Contigs ORF fasta file through a database called PFAM, a database of protein families. First we made sure the database was ready then searched teh PFAM database of Hidden Markov Models to determine which protein families are present in our contig file. We specificed 4 CPU cores and stated we want to search active sites. Output file is below.
+-[unmapped PFAM sbatch](unmapped_pfam.sbatch)
+-[unmapped PFAM sh](unmapped_pfam.sh)
+  - [PFAM output file]()

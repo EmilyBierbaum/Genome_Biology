@@ -18,4 +18,4 @@
 ## Genomic Adventure
 - [Chapter 2](Chapter_2.md)
 - [Chapter 3](Chapter_3.md)
-- [chapter4](Chapter_4.md)
+- [Chapter 4](chapter4.md)

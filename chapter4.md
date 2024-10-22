@@ -1,8 +1,8 @@
 ## Genomic Adventure Time
 ## Chapter Four
 #### Task 1 we used SPAdes to de novo assemble the E. coli genome.
-- [SPAdes sbatch](spades.sbatch)
-- [SPAdes sh](spades.sh)
+- [SPAdes sbatch](full_spades.sbatch)
+- [SPAdes sh](full_spades.sh)
 
 #### Task 2 we used QUAST (an old friend) to check the assembly.
 - Did not run any sh or sbatch files

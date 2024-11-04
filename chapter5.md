@@ -15,7 +15,7 @@
 - [pseudomonas short assembly sbatch](pseud_short_assembly.sbatch)
 - [pseudomonas short assembly sh](pseud_short_assembly.sh)
 - [pseudomonas quast sbatch](pseud_short_quast.sbatch)
-- [pseudomonas quast sbatch](pseud_short_quast.sh)
+- [pseudomonas quast sh](pseud_short_quast.sh)
     - [Quast report output](report.txt)
  
 #### Task 5 we created a hybrid assembly that included the longer PacBio data

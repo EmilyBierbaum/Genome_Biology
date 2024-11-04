@@ -22,7 +22,7 @@
 - [pseudomonas long assembly sbatch](pseud_long_assembly.sbatch)
 - [pseudomonas long assembly sh](pseud_long_assembly.sh)
 - [pseudomonas quast sbatch](pseud_long_quast.sbatch)
-- [pseudomonas quast sbatch](pseud_long_quast.sh)
+- [pseudomonas quast sh](pseud_long_quast.sh)
     - [Quast report output](report.txt)
      
 #### Task 6 we aligned the original reads back to the reference assembly

@@ -37,7 +37,7 @@
 - [pseudomonas samtools sort sh](pseud_samtools_sort.sh)
 - [pseudomonas samtools flagstat sbatch](pseud_samtools_flagstat.sbatch)
 - [pseudomonas samtools flagstat sh](pseud_samtools_flagstat.sh)
-   - [Pseudo Illumina sorted stats](pseudo_illumina_sorted.stat)
+   - [Pseudo Illumina sorted stats](pseudo_illumina_sorted.stats)
 
 #### Task 6 continued where we map our PacBio data to the assembly with the tool minimap2
 ### PACBIO LONG-READS

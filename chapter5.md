@@ -4,7 +4,7 @@
 - No sbatch or sh files were used
 
 #### Task 2 we used the QC function to check the quality of the fastq files
-- [pseudomonas fastqc sbatch](pseudomonas_fastqc.sbatch)
+- [pseudomonas fastqc sbatch](pseudomonas_fastq.sbatch)
 - [pseudomonas fastqc sh](pseudomonas_fastqc.sh)
 
 #### Task 3 we trimed the Illumina short-reads

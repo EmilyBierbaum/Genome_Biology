@@ -51,4 +51,4 @@
 - [pseudomonas samtools index sh](pseud_mm_samtools_index.sh)
 - [pseudomonas samtools flagstat sbatch](pseud_mm_samtools_flagstat.sbatch)
 - [pseudomonas samtools flagstat sh](pseud_mm_samtools_flagstat.sh)
-   - [Pseudo PacBio sorted stats](pseudo_pacbio_sorted.stat)
+   - [Pseudo PacBio sorted stats](pseudo_pacbio_sorted.stats)

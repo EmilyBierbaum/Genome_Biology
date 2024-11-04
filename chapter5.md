@@ -29,8 +29,8 @@
 ### ILLUMINA SHORT-READS
 - [pseudomonas BWA index sbatch](pseud_bwa_index.sbatch)
 - [pseudomonas BWA index sh](pseud_bwa_index.sh)
-- [pseudomonas BWA mem sbatch](pseud_bwa_mem.sbatch)
-- [pseudomonas BWA mem sh](pseud_bwa_mem.sh)
+- [pseudomonas BWA mem sbatch](pseud_bwa_mem.sbatch.sbatch)
+- [pseudomonas BWA mem sh](pseud_bwa_mem.sh.sh)
 - [pseudomonas samtools view sbatch](pseud_samtools_view.sbatch)
 - [pseudomonas samtools view sh](pseud_samtools_view.sh)
 - [pseudomonas samtools sort sbatch](pseud_samtools_sort.sbatch)

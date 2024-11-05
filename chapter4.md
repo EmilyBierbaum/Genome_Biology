@@ -6,7 +6,7 @@
 
 #### Task 2 we used QUAST (an old friend) to check the assembly.
 - Did not run any sh or sbatch files, I used the quast function in the terminal because it mentioned it wouldnt take long
-- I changed directory to  `scratch/biol726301/BIOL7263_Genomics/sequencing_data/ecoli/assembly
+- I changed directory to  `scratch/biol726301/BIOL7263_Genomics/sequencing_data/ecoli/assembly`
 - Ran this command in the terminal `quast.py --output-dir quast contigs.fasta`
 
 

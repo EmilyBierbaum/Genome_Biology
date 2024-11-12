@@ -56,13 +56,13 @@
 - [kallisto_quant.sh](kallisto_quant.sh)
 - [kallisto quant args](kallisto_quant.args)
 
-### Task 4: I downloaded the output folder to my local computer that contains the reads counts and measurement variance.
+### Task 4: I downloaded the output folder to my local computer that contained the reads counts and measurement variance.
 - [sed command for titles](sed_titles.sh)
     - These commands clean up the output file, so it can be imported into R studio
 - [Headers for R](TTC_double_header_nocomma.txt)
     - This list contains all of the gene names, I had to duplicate the gene name in each row to make the R script work
 - [Table](ExpTable_TTC.txt)
-    - This table delineates the two groups (E. spelaea vs E. multiplicata)
+    - This table delineates the two groups (*E. spelaea* vs *E. multiplicata*)
 
 #### Task 5: Once you downloaded the output folder and associated text files, open up R studio. I used the script Dr. Toomey gave us in class for the DEGs and sleuth analyses to examine differential gene expression of the two groups: *E. spelaea* larva vs *E. multiplicata* larva. I uploaded the output volcano plot and heatmap below. If downloaded as a pdf, then you can use Adobe Illustrator to organize the gene names better.
 - [HeatMap](heatmap.pdf)

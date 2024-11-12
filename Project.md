@@ -1,5 +1,5 @@
 # Emily Bierbaum Transcriptome project
-## How does the data from 3' RNA-seq differ from Deep RNA-seq on differential gene expression of cave adaptation genes in *Eurycea spelaea* vs *Eurycea multiplicata*?
+## How does the data from 3' RNA-seq differ from Deep RNA-seq on differential gene expression and gene coverage in *Eurycea spelaea* vs *Eurycea multiplicata*?
 
 ### Part 1: 3' RNA-seq 
 #### For this data I have 4 larval specimens of *E. spelaea* (Grotto Salamander)

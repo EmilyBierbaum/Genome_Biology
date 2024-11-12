@@ -1,0 +1,1 @@
+spades.py --rna -t 20 -m 60 -o C291_spades_assembly -1 trimmed_reads291_val_1.fq.gz -2 trimmed_reads291_val_2.fq.gz

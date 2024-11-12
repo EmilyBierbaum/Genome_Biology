@@ -1,0 +1,1 @@
+awk '{split($0, a, " "); split(a[2], b, "|"); gene = ($0 ~ /GN=/) ? gensub(/.*GN=([^ ]+).*/, "\\1", "g") : "-"; desc_start = index($0, a[7]); desc_end = match(substr($0, desc_start), / OS=/); print a[1] "\t" gene "|" a[2] " " substr($0, desc_start, desc_end - 1)}' HEK_blastx.tsv > HEK_headers.txt

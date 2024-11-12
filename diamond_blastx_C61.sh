@@ -1,0 +1,1 @@
+diamond blastx --threads 8 --outfmt 6 qseqid sseqid length pident evalue stitle -k 1 -d amphibian_protein.dmnd -q transcripts_emult.fasta -o C61Emult_blastx.tsv

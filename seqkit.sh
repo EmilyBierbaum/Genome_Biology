@@ -1,0 +1,1 @@
+seqkit replace -p "(.+)" -r '$1|{kv}' -k HEK_headers.txt transcripts.fasta > transcripts_annotated.fasta

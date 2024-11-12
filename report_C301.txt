@@ -1,0 +1,24 @@
+All statistics are based on contigs of size >= 500 bp, unless otherwise noted (e.g., "# contigs (>= 0 bp)" and "Total length (>= 0 bp)" include all contigs).
+
+Assembly                    transcripts_espel301
+# contigs (>= 0 bp)         81625               
+# contigs (>= 1000 bp)      289                 
+# contigs (>= 5000 bp)      1                   
+# contigs (>= 10000 bp)     0                   
+# contigs (>= 25000 bp)     0                   
+# contigs (>= 50000 bp)     0                   
+Total length (>= 0 bp)      21590268            
+Total length (>= 1000 bp)   442310              
+Total length (>= 5000 bp)   5360                
+Total length (>= 10000 bp)  0                   
+Total length (>= 25000 bp)  0                   
+Total length (>= 50000 bp)  0                   
+# contigs                   1208                
+Largest contig              5360                
+Total length                1048198             
+GC (%)                      46.75               
+N50                         855                 
+N75                         633                 
+L50                         379                 
+L75                         737                 
+# N's per 100 kbp           122.11              

@@ -1,0 +1,8 @@
+Run_s	treat
+Espel_C292	control
+Espel_C1161	control
+Espel_C1162	control
+Espel_C1172	control
+Emult_RMB5925	TTC
+Emult_RMB5926	TTC
+Emult_RMB5927	TTC

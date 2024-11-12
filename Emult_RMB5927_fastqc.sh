@@ -1,0 +1,2 @@
+fastqc /scratch/biol726301/BIOL7263_Genomics/Eurycea_fastq/Emult_RMB5927_R1.fastq.gz -o /scratch/biol726301/BIOL7263_Genomics/Eurycea_fastqc_output/
+fastqc /scratch/biol726301/BIOL7263_Genomics/Eurycea_fastq/Emult_RMB5927_R2.fastq.gz -o /scratch/biol726301/BIOL7263_Genomics/Eurycea_fastqc_output/

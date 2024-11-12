@@ -1,0 +1,1 @@
+kallisto index -i Bonett_transcriptome.idx updated_transcriptome.fasta

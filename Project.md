@@ -48,7 +48,7 @@
 ### Task 2: I did NOT have to trim these files
 -  No scripts here! 😜
 
-### Task 3: I used the program Kallisto to align and count my reads. First I made an index of the Bonett lab reference transcriptome, then setup the Kallisto quantification. For the quantification script I used the quantification scripts, newly created transcriptome index, and R1 and R2 files of each specimen. Dr. Toomey taught us how to use arrays, so I did NOT have to submit 7+ scripts! It does require an 'args' file.
+### Task 3: I used the program Kallisto to align and count my reads. First I made an index of the Bonett lab reference transcriptome, then setup the Kallisto quantification. For the quantification script I used the given quantification commands, newly created transcriptome index, and R1 and R2 files of each specimen. Dr. Toomey taught us how to use arrays, so I did NOT have to submit 7+ scripts! It does require an 'args' file.
 - [Bonett reference transcriptome](updated_transcriptome.fasta)
 - [kallisto index sbatch](kallisto_index.sbatch)
 - [kallisto index sh](kallisto_index.sh)

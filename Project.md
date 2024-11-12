@@ -109,3 +109,42 @@
 - [Emult_C-6-1 trim sh](emult_trim_C61.sh)
     - [R1 output](trimmed_readsC61_val_R1_fastqc.html)
     - [R2 output](trimmed_readsC61_val_R2_fastqc.html)
+ 
+### Task 3: The program SPAdes was used in RNA mode to de novo assemble my trimmed RNA-seq data. This will produce a transcript.fasta instead of a contig.fasta.
+- [Espel_C-29-1 SPAdes sbatch](C291_RNA_spades.sbatch)
+- [Espel_C-29-1 SPAdes sh](C291_RNA_spades.sh)
+    - [Transcript output fasta](transcripts_espel291.fasta)
+- [Espel_C-30-1 SPAdes sbatch](C301_RNA_spades.sbatch)
+- [Espel_C-30-1 SPAdes sh](C301_RNA_spades.sh)
+    - [Transcript output fasta](transcripts_espel301.fasta) 
+- [Emult_C-6-1 SPAdes sbatch](C61_RNA_spades.sbatch)
+- [Emult_C-6-1 SPAdes sh](C61_RNA_spades.sh)
+    - [Transcript output fasta](transcripts_emult.fasta)
+
+### Task 4: After running the de novo assembly with SPAdes, I used the program QUAST to generate statistics on the assembly.
+- [Espel_C-29-1 QUAST sbatch](C291_RNAquast.sbatch)
+- [Espel_C-29-1 QUAST sh](C291_RNAquast.sh)
+    - [Report](report_C291.txt)
+- [Espel_C-30-1 QUAST sbatch](C301_RNAquast.sbatch)
+- [Espel_C-30-1 QUAST sh](C301_RNAquast.sh)
+    - [Report](report_301.txt)
+- [Emult_C-6-1 QUAST sbatch](C61_RNAquast.sbatch)
+- [Emult_C-6-1 QUAST sh](C61_RNAquast.sh)
+    - [Report](report_C61.txt)
+
+### Task 5: I used the Uniprotkb database (https://www.uniprot.org/help/uniprotkb) to download protein sequences for salamanders (20k) and frogs (465k). I unzipped the files and concatenated both into a single fasta file `cat uniprotkb_salamander.fasta uniprotkb_frog.fasta > amphibian_protein.fasta`. Then I converted the amphibian fast file into a blast database with diamond.
+- [amphibian index sbatch](mkdb_diamond.sbatch)
+- [amphibian index sh](mkdb_diamond.sh)
+
+### Task 6: Now I can run the blast search with blastx to search RNA transcripts against amphibian protein database. This will create .tsv output files.
+- [Espel_C-29-1 blastx sbatch](diamond_blastx_C291.sbatch)
+- [Espel_C-29-1 blastx sh](diamond_blastx_C291.sh)
+- [Espel_C-30-1 blastx sbatch](diamond_blastx_C301.sbatch)
+- [Espel_C-30-1 blastx sh](diamond_blastx_C301.sh)
+- [Emult_C-6-1 blastx sbatch](diamond_blastx_C61.sbatch)
+- [Emult_C-6-1 blastx sh](diamond_blastx_C61.sh)
+
+### Task 7: Next I stripped out the information of interest with the `awk` command with Toomey's script. Next we merge the header file to the transcriptome, with the replace function `seqkit`. 
+- [Emult_C-6-1 awk command](awk.sh)
+- [Emult_C-6-1 seqkit command](seqkit.sh)
+

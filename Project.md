@@ -113,13 +113,10 @@
 ### Task 3: The program SPAdes was used in RNA mode to de novo assemble my trimmed RNA-seq data. This will produce a transcript.fasta instead of a contig.fasta.
 - [Espel_C-29-1 SPAdes sbatch](C291_RNA_spades.sbatch)
 - [Espel_C-29-1 SPAdes sh](C291_RNA_spades.sh)
-    - [Transcript output fasta](transcripts_espel291.fasta)
 - [Espel_C-30-1 SPAdes sbatch](C301_RNA_spades.sbatch)
 - [Espel_C-30-1 SPAdes sh](C301_RNA_spades.sh)
-    - [Transcript output fasta](transcripts_espel301.fasta) 
 - [Emult_C-6-1 SPAdes sbatch](C61_RNA_spades.sbatch)
 - [Emult_C-6-1 SPAdes sh](C61_RNA_spades.sh)
-    - [Transcript output fasta](transcripts_emult.fasta)
 
 ### Task 4: After running the de novo assembly with SPAdes, I used the program QUAST to generate statistics on the assembly.
 - [Espel_C-29-1 QUAST sbatch](C291_RNAquast.sbatch)

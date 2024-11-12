@@ -1,20 +1,20 @@
 # Emily Bierbaum Transcriptome project
-## How does 3' RNA-seq differ from Deep RNA-seq on differential gene expression of cave adaptation genes in Eurycea spelaea vs Eurycea multiplicata?
+## How does the data from 3' RNA-seq differ from Deep RNA-seq on differential gene expression of cave adaptation genes in *Eurycea spelaea* vs *Eurycea multiplicata*?
 
 ### Part 1: 3' RNA-seq 
-#### For this data I have 4 larval specimens of E. spelaea (Grotto Salamander)
-- E. spelaea C-29-2
-- E. spelaea C-116-1
-- E. spelaea C-116-2
-- E. spelaea C-117-2
+#### For this data I have 4 larval specimens of *E. spelaea* (Grotto Salamander)
+- *E. spelaea* C-29-2
+- *E. spelaea* C-116-1
+- *E. spelaea* C-116-2
+- *E. spelaea* C-117-2
 
-#### and 3 larval specimens of E. multiplicata (Many-ribbed Salamander)
-- E. multiplicata RMB5925
-- E. multiplicata RMB5926
-- E. multiplicata RMB5927
+#### and 3 larval specimens of *E. multiplicata* (Many-ribbed Salamander)
+- *E. multiplicata* RMB5925
+- *E. multiplicata* RMB5926
+- *E. multiplicata* RMB5927
 
 ### Task 1: I evaluated the quality of my Illumina data with the fastqc program
-#### E. spelaea
+#### *E. spelaea*
 - [Espel_C-29-2 fastQC sbatch](Espel_C292_fastqc.sbatch)
 - [Espel_C-29-2 fastQC sh](Espel_C292_fastqc.sh)
     - [R1 output](Espel_C292_R1_fastqc.html)
@@ -31,7 +31,7 @@
 - [Espel_C-117-1 fastQC sh](Espel_C1171_fastqc.sh)
     - [R1 output](Espel_C1171_R1_fastqc.html)
     - [R2 output](Espel_C1171_R2_fastqc.html)
-#### E. multiplicata
+#### *E. multiplicata*
 - [Emult_RMB5925 fastQC sbatch](Emult_RMB5925_fastqc.sbatch)
 - [Emult_RMB5925 fastQC sh](Emult_RMB5925_fastqc.sh)
     - [R1 output](Emult_RMB5925_R1_fastqc.html)
@@ -64,15 +64,15 @@
 - [Table](ExpTable_TTC.txt)
     - This table delineates the two groups (E. spelaea vs E. multiplicata)
 
-#### Task 5: Once you downloaded the output folder and associated text files, open up R studio. I used the script Dr. Toomey gave us in class for the DEGs and sleuth analyses to examine differential gene expression of the two groups: E. spelaea larva vs E. multiplicata larva. I uploaded the output volcano plot and heatmap below. If downloaded as a pdf, then you can use Adobe Illustrator to organize the gene names better.
+#### Task 5: Once you downloaded the output folder and associated text files, open up R studio. I used the script Dr. Toomey gave us in class for the DEGs and sleuth analyses to examine differential gene expression of the two groups: *E. spelaea* larva vs *E. multiplicata* larva. I uploaded the output volcano plot and heatmap below. If downloaded as a pdf, then you can use Adobe Illustrator to organize the gene names better.
 - [HeatMap](heatmap.pdf)
 - [VolcanoPlot](volcanoplot.pdf)
 - [RNA-seq R script](RNA-seq.R)
 
 ### Part 2: Deep RNA-seq 
-#### For this data I have 2 larval specimens of E. spelaea (Grotto Salamander)
-- E. spelaea C-29-1
-- E. spelaea C-30-1
+#### For this data I have 2 larval specimens of *E. spelaea* (Grotto Salamander)
+- *E. spelaea* C-29-1
+- *E. spelaea* C-30-1
 
-#### and 1 larval specimen of E. multiplicata (Many-ribbed Salamander)
-- E. multiplicata C-6-1
+#### and 1 larval specimen of *E. multiplicata* (Many-ribbed Salamander)
+- *E. multiplicata* C-6-1

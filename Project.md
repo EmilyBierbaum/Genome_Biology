@@ -103,12 +103,12 @@
     - [R2 output](trimmed_reads291_val_R2_fastqc.html)
 - [Espel_C-30-1 trim sbatch](espel_trim_301.sbatch)
 - [Espel_C-30-1 trim sh](espel_trim_301.sh)
-    - [R1 output](trimmed_reads301_val_R1_fastqc.html)
-    - [R2 output](trimmed_reads301_val_R2_fastqc.html)
-- [Emult_C-6-1 trim sbatch](emult_trim_C61.sbatch)
-- [Emult_C-6-1 trim sh](emult_trim_C61.sh)
-    - [R1 output](trimmed_readsC61_val_R1_fastqc.html)
-    - [R2 output](trimmed_readsC61_val_R2_fastqc.html)
+    - [R1 output](trimmed_reads301_val_1_fastqc.html)
+    - [R2 output](trimmed_reads301_val_2_fastqc.html)
+- [Emult_C-6-1 trim sbatch](emult_trim_61.sbatch)
+- [Emult_C-6-1 trim sh](emult_trim_61.sh)
+    - [R1 output](trimmed_readsC61_val_1_fastqc.html)
+    - [R2 output](trimmed_readsC61_val_2_fastqc.html)
  
 ### Task 3: The program SPAdes was used in RNA mode to de novo assemble my trimmed RNA-seq data. This will produce a transcript.fasta instead of a contig.fasta.
 - [Espel_C-29-1 SPAdes sbatch](C291_RNA_spades.sbatch)

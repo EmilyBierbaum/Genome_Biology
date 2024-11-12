@@ -1,7 +1,8 @@
 # Emily Bierbaum Transcriptome project
 ## How does the data from 3' RNA-seq differ from Deep RNA-seq on differential gene expression and gene coverage in *Eurycea spelaea* vs *Eurycea multiplicata*?
 
-### Part 1: 3' RNA-seq 
+
+## Part 1: 3' RNA-seq 
 #### For this data I have 4 larval specimens of *E. spelaea* (Grotto Salamander)
 - *E. spelaea* C-29-2
 - *E. spelaea* C-116-1
@@ -68,8 +69,10 @@
 - [HeatMap](heatmap.pdf)
 - [VolcanoPlot](volcanoplot.pdf)
 - [RNA-seq R script](RNA-seq.R)
+-------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
-### Part 2: Deep RNA-seq 
+
+## Part 2: Deep RNA-seq 
 #### For this data I have 2 larval specimens of *E. spelaea* (Grotto Salamander)
 - *E. spelaea* C-29-1
 - *E. spelaea* C-30-1

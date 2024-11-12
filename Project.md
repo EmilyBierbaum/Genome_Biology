@@ -79,3 +79,33 @@
 
 #### and 1 larval specimen of *E. multiplicata* (Many-ribbed Salamander)
 - *E. multiplicata* C-6-1
+
+### Task 1: I evaluated the quality of my Illumina data with the fastqc program
+#### *E. spelaea*
+- [Espel_C-29-1 fastQC sbatch](Espel_C291_fastqc.sbatch)
+- [Espel_C-29-1 fastQC sh](Espel_C291_fastqc.sh)
+    - [R1 output](Espel_C291_R1_fastqc.html)
+    - [R2 output](Espel_C291_R2_fastqc.html)
+- [Espel_C-30-1 fastQC sbatch](Espel_C301_fastqc.sbatch)
+- [Espel_C-30-1 fastQC sh](Espel_C301_fastqc.sh)
+    - [R1 output](Espel_C301_R1_fastqc.html)
+    - [R2 output](Espel_C301_R2_fastqc.html)
+#### *E. multiplicata*
+- [Emult_C-6-1 fastQC sbatch](Emult_C61_fastqc.sbatch)
+- [Emult_C-6-1 fastQC sh](Emult_C61_fastqc.sh)
+    - [R1 output](Emult_C61_R1_fastqc.html)
+    - [R2 output](Emult_C61_R2_fastqc.html)
+ 
+### Task 2: I trimmed and filtered my Deep RNA-seq data by the removal of low quality reads and adpators.
+- [Espel_C-29-1 trim sbatch](espel_trim_291.sbatch)
+- [Espel_C-29-1 trim sh](espel_trim_291.sh)
+    - [R1 output](trimmed_reads291_val_R1_fastqc.html)
+    - [R2 output](trimmed_reads291_val_R2_fastqc.html)
+- [Espel_C-30-1 trim sbatch](espel_trim_301.sbatch)
+- [Espel_C-30-1 trim sh](espel_trim_301.sh)
+    - [R1 output](trimmed_reads301_val_R1_fastqc.html)
+    - [R2 output](trimmed_reads301_val_R2_fastqc.html)
+- [Emult_C-6-1 trim sbatch](emult_trim_C61.sbatch)
+- [Emult_C-6-1 trim sh](emult_trim_C61.sh)
+    - [R1 output](trimmed_readsC61_val_R1_fastqc.html)
+    - [R2 output](trimmed_readsC61_val_R2_fastqc.html)

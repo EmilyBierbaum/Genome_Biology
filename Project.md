@@ -14,11 +14,11 @@
 - E. multiplicata RMB5927
 
 ### Task 1: I evaluated the quality of my Illumina data with the fastqc program
-##### E. spelaea
+#### E. spelaea
 - [Espel_C-29-2 fastQC sbatch](Espel_C292_fastqc.sbatch)
 - [Espel_C-29-2 fastQC sh](Espel_C292_fastqc.sh)
-    - [R1 output](Espel_C301_R1_fastqc.html)
-    - [R2 output](Espel_C301_R2_fastqc.html)
+    - [R1 output](Espel_C292_R1_fastqc.html)
+    - [R2 output](Espel_C292_R2_fastqc.html)
 - [Espel_C-116-1 fastQC sbatch](Espel_C1161_fastqc.sbatch)
 - [Espel_C-116-1 fastQC sh](Espel_C1161_fastqc.sh)
     - [R1 output](Espel_C1161_R1_fastqc.html)
@@ -31,7 +31,7 @@
 - [Espel_C-117-1 fastQC sh](Espel_C1171_fastqc.sh)
     - [R1 output](Espel_C1171_R1_fastqc.html)
     - [R2 output](Espel_C1171_R2_fastqc.html)
-##### E. multiplicata
+#### E. multiplicata
 - [Emult_RMB5925 fastQC sbatch](Emult_RMB5925_fastqc.sbatch)
 - [Emult_RMB5925 fastQC sh](Emult_RMB5925_fastqc.sh)
     - [R1 output](Emult_RMB5925_R1_fastqc.html)

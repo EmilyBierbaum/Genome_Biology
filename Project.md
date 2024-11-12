@@ -124,7 +124,7 @@
     - [Report](report_C291.txt)
 - [Espel_C-30-1 QUAST sbatch](C301_RNAquast.sbatch)
 - [Espel_C-30-1 QUAST sh](C301_RNAquast.sh)
-    - [Report](report_301.txt)
+    - [Report](report_C301.txt)
 - [Emult_C-6-1 QUAST sbatch](C61_RNAquast.sbatch)
 - [Emult_C-6-1 QUAST sh](C61_RNAquast.sh)
     - [Report](report_C61.txt)

@@ -1,18 +1,18 @@
-# Emily Bierbaum Transcriptome project
-## How does the data from 3' RNA-seq differ from Deep RNA-seq on differential gene expression and gene coverage in *Eurycea spelaea* vs *Eurycea multiplicata*?
+# Emily L. Bierbaum Transcriptome project 🦎
+## TITLE: Differential expression of vision related genes across ontogeny in the cave-adapted Grotto Salamander, *E. spelaea* 
+### First I wanted to evaluate statistical differences in the level of differential gene expression produced from the Bonett lab **Transcriptome** vs a transcriptome generated from my *de novo* assembled deep RNA-seq file ⭐ The samples I compared for differential gene expression, are eye tissues from control larva vs thyroid hormone (T3) treated larva. T3 induces metamorphosis, so I wanted to examine if this push towards metamorphosis changes the gene expression profile of vision related genes. Interestingly, the Grotto Salamander, is the only obligate metamorphic cave species 🆒 As larva, they have functional eyes and a fully pigmented body, yet after metamorphsis when they disperse into caves, the eyes degenerate and pigmentation reduces dramatically. 
 
-
-## Part 1: 3' RNA-seq 
-##### For this data I have 4 larval specimens of *E. spelaea* (Grotto Salamander)
+## Below lists the samples used for this study (3' RNA-seq files)
+##### 4 CONTROL larval specimens
 - *E. spelaea* C-29-2
 - *E. spelaea* C-116-1
 - *E. spelaea* C-116-2
 - *E. spelaea* C-117-2
 
-##### and 3 larval specimens of *E. multiplicata* (Many-ribbed Salamander)
-- *E. multiplicata* RMB5925
-- *E. multiplicata* RMB5926
-- *E. multiplicata* RMB5927
+##### 3 T3 TREATED larval specimens
+- *E. spelaea* T3-31-2
+- *E. spelaea* T3-32-1
+- *E. spelaea* T3-118-1
 
 #### Task 1: I evaluated the quality of my Illumina data with the fastqc program
 ##### *E. spelaea*
@@ -32,42 +32,41 @@
 - [Espel_C-117-2 fastQC sh](Espel_C1171_fastqc.sh)
     - [R1 output](Espel_C1172_R1_fastqc.html)
     - [R2 output](Espel_C1172_R2_fastqc.html)
-##### *E. multiplicata*
-- [Emult_RMB5925 fastQC sbatch](Emult_RMB5925_fastqc.sbatch)
-- [Emult_RMB5925 fastQC sh](Emult_RMB5925_fastqc.sh)
-    - [R1 output](Emult_RMB5925_R1_fastqc.html)
-    - [R2 output](Emult_RMB5925_R2_fastqc.html)
-- [Emult_RMB5926 fastQC sbatch](Emult_RMB5926_fastqc.sbatch)
-- [Emult_RMB5926 fastQC sh](Emult_RMB5926_fastqc.sh)
-    - [R1 output](Emult_RMB5926_R1_fastqc.html)
-    - [R2 output](Emult_RMB5926_R2_fastqc.html)
-- [Emult_RMB5927 fastQC sbatch](Emult_RMB5927_fastqc.sbatch)
-- [Emult_RMB5927 fastQC sh](Emult_RMB5927_fastqc.sh)
-    - [R1 output](Emult_RMB5927_R1_fastqc.html)
-    - [R2 output](Emult_RMB5927_R2_fastqc.html)
+- [Espel_T3-31-2 fastQC sbatch](Espel_T3_31_2_fastqc.sbatch)
+- [Espel_T3-31-2 fastQC sh](Espel_T3_31_2_fastqc.sh)
+    - [R1 output](Espel_T3_31_2_R1_fastqc.html)
+    - [R2 output](Espel_T3_31_2_R2_fastqc.html)
+- [Espel_T3-32-1 fastQC sbatch](Espel_T3_32_1_fastqc.sbatch)
+- [Espel_T3-32-1 fastQC sh](Espel_T3_32_1_fastqc.sh)
+    - [R1 output](Espel_T3_32_1_R1_fastqc.html)
+    - [R2 output](Espel_T3_32_1_R2_fastqc.html)
+- [Espel_T3-118-1 fastQC sbatch](Espel_T3_118_1_fastqc.sbatch)
+- [Espel_T3-118-1 fastQC sh](Espel_T3_118_1_fastqc.sh)
+    - [R1 output](Espel_T3_118_1_R1_fastqc.html)
+    - [R2 output](Espel_T3_118_1_R2_fastqc.html)
  
 #### Task 2: I did NOT have to trim these files
 -  No scripts here! 😜
 
-#### Task 3: I used the program Kallisto to align and count my reads. First I made an index of the Bonett lab reference transcriptome, then setup the Kallisto quantification. For the quantification script I used the given quantification commands, newly created transcriptome index, and R1 and R2 files of each specimen. Dr. Toomey taught us how to use arrays, so I did NOT have to submit 7+ scripts! It does require an 'args' file.
-- [Bonett reference transcriptome](updated_transcriptome.fasta)
+#### Task 3: First we need to make an index of the Bonett lab reference transcriptome, then setup the Kallisto quantification. The quant script generates read counts from the R1 and R2 files per species to the reference index. and R1 and R2 files of each specimen. Dr. Toomey taught us how to use arrays, so I did NOT have to submit 7+ scripts! It does require an 'args' file. I created a folder to output the results to.
+- [Bonett reference transcriptome](transcriptome.txt)
 - [kallisto index sbatch](kallisto_index.sbatch)
 - [kallisto index sh](kallisto_index.sh)
 - [kallisto quant sbatch](kallisto_quant.sbatch)
 - [kallisto_quant.sh](kallisto_quant.sh)
 - [kallisto quant args](kallisto_quant.args)
 
-#### Task 4: I downloaded the output folder to my local computer that contained the reads counts and measurement variance.
+#### Task 4: I downloaded the output folders to my local computer that contained the reads counts and measurement variance.
 - [sed command for titles](sed_titles.sh)
     - These commands clean up the output file, so it can be imported into R studio
 - [Headers for R](TTC_double_header_nocomma.txt)
     - This list contains all of the gene names, I had to duplicate the gene name in each row to make the R script work
 - [Table](ExpTable_TTC.txt)
-    - This table delineates the two groups (*E. spelaea* vs *E. multiplicata*)
+    - This table delineates the two groups (*Control* vs *T3 treated*)
 
-##### Task 5: Once you downloaded the output folder and associated text files, open up R studio. I used the script Dr. Toomey gave us in class for the DEGs and sleuth analyses to examine differential gene expression of the two groups: *E. spelaea* larva vs *E. multiplicata* larva. I uploaded the output volcano plot and heatmap below. If downloaded as a pdf, then you can use Adobe Illustrator to organize the gene names better.
-- [HeatMap](heatmap.pdf)
-- [VolcanoPlot](volcanoplot.pdf)
+##### Task 5: Once you downloaded the output folder and associated text files, open up R studio. I used the script Dr. Toomey gave us in class for the DEGs and sleuth analyses to examine differential gene expression of the two groups: *E. spelaea* control larva vs *E. spelaea* T3 treated larva. I uploaded the output volcano plot and heatmap below.
+- [HeatMap](Heatmap_Dec.png)
+- [VolcanoPlot](Espel_volcanoplot.pdf)
 - [RNA-seq R script](RNA-seq.R)
 -------------------------------------------------------------------------------------------------------------------------------------------------------------------
 

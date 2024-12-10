@@ -1,9 +1,9 @@
 # EMILY L. BIERBAUM transcriptome project 🦎
 ## Title: Differential expression of vision related genes across ontogeny in the cave-adapted Grotto Salamander, *E. spelaea* 
-### First I wanted to evaluate statistical differences in the level of differential gene expression produced from the Bonett lab ** Transcriptome ** vs a transcriptome generated from my *de novo* assembled deep RNA-seq file ⭐ The samples I compared for differential gene expression, are eye tissues from control larva vs thyroid hormone (T3) treated larva. T3 induces metamorphosis, so I wanted to examine if this push towards metamorphosis changes the gene expression profile of vision related genes. Interestingly, the Grotto Salamander, is the only obligate metamorphic cave species 🆒 As larva, they have functional eyes and a fully pigmented body, yet after metamorphsis when they disperse into caves, the eyes degenerate and pigmentation reduces dramatically. 
+### First I wanted to evaluate statistical differences in the level of differential gene expression produced from the Bonett lab **Transcriptome** vs a transcriptome generated from my *de novo* assembled deep RNA-seq file ⭐ The samples I compared for differential gene expression, are eye tissues from control larva vs thyroid hormone (T3) treated larva. T3 induces metamorphosis, so I wanted to examine if this push towards metamorphosis changes the gene expression profile of vision related genes. Interestingly, the Grotto Salamander, is the only obligate metamorphic cave species 🆒 As larva, they have functional eyes and a fully pigmented body, yet after metamorphsis when they disperse into caves, the eyes degenerate and pigmentation reduces dramatically. 
 
 ![Dante Fenolio](DanteFen.png)
-
+###### Dante Fenolio
 
 ## Below lists the samples used for this study (3' RNA-seq files)
 ##### 4 CONTROL larval specimens

@@ -146,7 +146,7 @@
 #### Task 10: Once again, I downloaded the output folder to my local computer that contained the reads counts and measurement variance.
 - [sed command for titles](sed_titles.sh)
     - These commands clean up the output file, so it can be imported into R studio
-- [Headers for R](Espel301_headers.txt)
+- [Headers for R](double_header_301.txt)
     - This list contains all of the gene names, I had to duplicate the gene name in each row to make the R script work
 - [Table](ExpTable_TTC.txt)
     - This table delineates the two groups (*Control* vs *T3*)

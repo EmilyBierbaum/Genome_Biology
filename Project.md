@@ -1,6 +1,9 @@
-# Emily L. Bierbaum Transcriptome project 🦎
-## TITLE: Differential expression of vision related genes across ontogeny in the cave-adapted Grotto Salamander, *E. spelaea* 
-### First I wanted to evaluate statistical differences in the level of differential gene expression produced from the Bonett lab **Transcriptome** vs a transcriptome generated from my *de novo* assembled deep RNA-seq file ⭐ The samples I compared for differential gene expression, are eye tissues from control larva vs thyroid hormone (T3) treated larva. T3 induces metamorphosis, so I wanted to examine if this push towards metamorphosis changes the gene expression profile of vision related genes. Interestingly, the Grotto Salamander, is the only obligate metamorphic cave species 🆒 As larva, they have functional eyes and a fully pigmented body, yet after metamorphsis when they disperse into caves, the eyes degenerate and pigmentation reduces dramatically. 
+# EMILY L. BIERBAUM transcriptome project 🦎
+## Title: Differential expression of vision related genes across ontogeny in the cave-adapted Grotto Salamander, *E. spelaea* 
+### First I wanted to evaluate statistical differences in the level of differential gene expression produced from the Bonett lab ** Transcriptome ** vs a transcriptome generated from my *de novo* assembled deep RNA-seq file ⭐ The samples I compared for differential gene expression, are eye tissues from control larva vs thyroid hormone (T3) treated larva. T3 induces metamorphosis, so I wanted to examine if this push towards metamorphosis changes the gene expression profile of vision related genes. Interestingly, the Grotto Salamander, is the only obligate metamorphic cave species 🆒 As larva, they have functional eyes and a fully pigmented body, yet after metamorphsis when they disperse into caves, the eyes degenerate and pigmentation reduces dramatically. 
+
+![Dante Fenolio](DanteFen.png)
+
 
 ## Below lists the samples used for this study (3' RNA-seq files)
 ##### 4 CONTROL larval specimens
@@ -14,6 +17,8 @@
 - *E. spelaea* T3-32-1
 - *E. spelaea* T3-118-1
 
+
+## Tasks associated to the annotated Bonett transcriptome
 #### Task 1: I evaluated the quality of my Illumina data with the fastqc program
 ##### *E. spelaea*
 - [Espel_C-29-2 fastQC sbatch](Espel_C292_fastqc.sbatch)
@@ -48,7 +53,7 @@
 #### Task 2: I did NOT have to trim these files
 -  No scripts here! 😜
 
-#### Task 3: First we need to make an index of the Bonett lab reference transcriptome, then setup the Kallisto quantification. The quant script generates read counts from the R1 and R2 files per species to the reference index. and R1 and R2 files of each specimen. Dr. Toomey taught us how to use arrays, so I did NOT have to submit 7+ scripts! It does require an 'args' file. I created a folder to output the results to.
+#### Task 3: First I made an index of the Bonett lab reference transcriptome, then setup the kallisto quantification. The quant script generates read counts from the R1 and R2 files of each species to the reference index. Dr. Toomey taught us how to use arrays, so I did NOT have to submit 7+ scripts! It does require an 'args' file. I created a folder to output the results to.
 - [Bonett reference transcriptome](transcriptome.txt)
 - [kallisto index sbatch](kallisto_index.sbatch)
 - [kallisto index sh](kallisto_index.sh)
@@ -64,20 +69,17 @@
 - [Table](ExpTable_TTC.txt)
     - This table delineates the two groups (*Control* vs *T3 treated*)
 
-##### Task 5: Once you downloaded the output folder and associated text files, open up R studio. I used the script Dr. Toomey gave us in class for the DEGs and sleuth analyses to examine differential gene expression of the two groups: *E. spelaea* control larva vs *E. spelaea* T3 treated larva. I uploaded the output volcano plot and heatmap below.
+#### Task 5: Once you downloaded the output folder and associated text files, open up R studio. I used the script Dr. Toomey gave us in class for the DEGs and *sleuth* analyses to examine differential gene expression of the two groups: control larva vs T3 treated larva. I uploaded the output volcano plot and heatmap below. No genes we significantly differentially expressed (see volcano plot), so the top 50 genes were displayed in the heatmap.
 - [HeatMap](Heatmap_Dec.png)
 - [VolcanoPlot](Espel_volcanoplot.pdf)
 - [RNA-seq R script](RNA-seq.R)
--------------------------------------------------------------------------------------------------------------------------------------------------------------------
+------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
-
-## Part 2: Deep RNA-seq 
-##### For this data I have 2 larval specimens of *E. spelaea* (Grotto Salamander)
+## Tasks associated to the annotated transcriptome produced by *de novo* assembly
+##### The files evaluated for *de novo* assemblies (deep RNA-seq files)
 - *E. spelaea* C-29-1
 - *E. spelaea* C-30-1
 
-##### and 1 larval specimen of *E. multiplicata* (Many-ribbed Salamander)
-- *E. multiplicata* C-6-1
 
 #### Task 1: I evaluated the quality of my Illumina data with the fastqc program
 ##### *E. spelaea*
@@ -89,13 +91,8 @@
 - [Espel_C-30-1 fastQC sh](Espel_C301_fastqc.sh)
     - [R1 output](Espel_C301_R1_fastqc.html)
     - [R2 output](Espel_C301_R2_fastqc.html)
-##### *E. multiplicata*
-- [Emult_C-6-1 fastQC sbatch](Emult_C61_fastqc.sbatch)
-- [Emult_C-6-1 fastQC sh](Emult_C61_fastqc.sh)
-    - [R1 output](Emult_C61_R1_fastqc.html)
-    - [R2 output](Emult_C61_R2_fastqc.html)
  
-#### Task 2: I trimmed and filtered my Deep RNA-seq data by the removal of low quality reads and adpators.
+#### Task 2: I trimmed and filtered my deep RNA-seq data by the removal of low quality reads and adpators.
 - [Espel_C-29-1 trim sbatch](espel_trim_291.sbatch)
 - [Espel_C-29-1 trim sh](espel_trim_291.sh)
     - [R1 output](trimmed_reads291_val_R1_fastqc.html)
@@ -104,18 +101,13 @@
 - [Espel_C-30-1 trim sh](espel_trim_301.sh)
     - [R1 output](trimmed_reads301_val_1_fastqc.html)
     - [R2 output](trimmed_reads301_val_2_fastqc.html)
-- [Emult_C-6-1 trim sbatch](emult_trim_61.sbatch)
-- [Emult_C-6-1 trim sh](emult_trim_61.sh)
-    - [R1 output](trimmed_readsC61_val_1_fastqc.html)
-    - [R2 output](trimmed_readsC61_val_2_fastqc.html)
+
  
-#### Task 3: The program SPAdes was used in RNA mode to de novo assemble my trimmed RNA-seq data. This will produce a transcript.fasta instead of a contig.fasta.
+#### Task 3: The program SPAdes was used in RNA mode to *de novo* assemble my trimmed RNA-seq data. This will produce a transcript.fasta instead of a contig.fasta.
 - [Espel_C-29-1 SPAdes sbatch](C291_RNA_spades.sbatch)
 - [Espel_C-29-1 SPAdes sh](C291_RNA_spades.sh)
 - [Espel_C-30-1 SPAdes sbatch](C301_RNA_spades.sbatch)
 - [Espel_C-30-1 SPAdes sh](C301_RNA_spades.sh)
-- [Emult_C-6-1 SPAdes sbatch](C61_RNA_spades.sbatch)
-- [Emult_C-6-1 SPAdes sh](C61_RNA_spades.sh)
 
 #### Task 4: After running the de novo assembly with SPAdes, I used the program QUAST to generate statistics on the assembly.
 - [Espel_C-29-1 QUAST sbatch](C291_RNAquast.sbatch)

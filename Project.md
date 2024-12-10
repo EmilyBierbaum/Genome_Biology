@@ -1,6 +1,6 @@
 # EMILY L. BIERBAUM transcriptome project 🦎
 ## Title: Differential expression of vision related genes across ontogeny in the cave-adapted Grotto Salamander, *E. spelaea* 
-### For this project, I wanted to evaluate statistical differences in the level of differential gene expression produced from the Bonett lab transcriptome vs a transcriptome generated from my *de novo* assembled deep RNA-seq file ⭐ The Bonett lab transcriptome has roughly ~4,300 genes, however that encompasses less than half of all genes that could be present! Thus, I decided to compare gene coverage, by *de novo* assembling and annotating one of my deep RNA-seq fastq files to serve as another transcriptome [hopefully more robust]. We want to see if the Bonett transcriptome or the newly created one better covers the breadth of differential gene expression.
+### For this project, I wanted to evaluate statistical differences in the level of differential gene expression produced from the Bonett lab transcriptome vs a transcriptome generated from my *de novo* assembled deep RNA-seq file. The Bonett lab transcriptome has roughly ~4,300 genes, however that encompasses less than half of all genes that could be present! Thus, I decided to compare gene coverage, by *de novo* assembling and annotating one of my deep RNA-seq fastq files to serve as another transcriptome [hopefully more robust]. We want to see if the Bonett transcriptome or the newly created one better covers the breadth of differential gene expression.
 
 ### The sample groups I compared for differential gene expression, were eye tissues from control larva vs thyroid hormone (T3) treated larva. T3 induces metamorphosis, so I wanted to examine if this push towards metamorphosis changed the gene expression profile of vision related genes. Interestingly, the Grotto Salamander, is the only known obligate metamorphic cave species 🆒 As larva, they have functional eyes and a fully pigmented body, yet after metamorphsis when they disperse into caves, the eyes degenerate and pigmentation reduces dramatically. 
 
@@ -20,7 +20,7 @@
 - *E. spelaea* T3-118-1
 
 
-## ~Tasks associated to the annotated Bonett transcriptome~
+## ⭐ Tasks associated to the annotated Bonett transcriptome ⭐
 #### Task 1: I evaluated the quality of my Illumina data with the `fastqc` program
 ##### *E. spelaea*
 - [Espel_C-29-2 fastQC sbatch](Espel_C292_fastqc.sbatch)
@@ -78,7 +78,7 @@
 - [HeatMap](Heatmap_Dec.png)
 ------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
-## ~Tasks associated to the transcriptome produced via *de novo* assembly~
+## ✴️ Tasks associated to the transcriptome produced via *de novo* assembly ✴️
 ##### The files evaluated for *de novo* assemblies (deep RNA-seq files). Luckily, I had two fastq files of *E. spelaea* larvae, so I examined both until I reached a consensus on which one was more <worthy> as the annotated transcriptome 😆
 - *E. spelaea* C-29-1
 - *E. spelaea* C-30-1
@@ -112,7 +112,7 @@
 - [Espel_C-30-1 SPAdes sbatch](C301_RNA_spades.sbatch)
 - [Espel_C-30-1 SPAdes sh](C301_RNA_spades.sh)
   
-#### Task 4: After running the *de novo* assembly with `SPAdes`, I used the program `QUAST` to generate statistics on the assembly. Based upon the statistics, I will be using <Espel_30-1> for the remaining analyses 🎆
+#### Task 4: After running the *de novo* assembly with `SPAdes`, I used the program `QUAST` to generate statistics on the assembly. Based upon the statistics, I will be using *Espel_30-1* for the remaining analyses 🎆
 - [Espel_C-29-1 QUAST sbatch](C291_RNAquast.sbatch)
 - [Espel_C-29-1 QUAST sh](C291_RNAquast.sh) 
     - [Report](report_C291.txt)

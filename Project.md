@@ -72,12 +72,12 @@
     - This table delineates the two groups (*Control* vs *T3 treated*)
 
 #### Task 5: Once you downloaded the output folder and associated text files, open up R studio. I used the script Dr. Toomey gave us in class for the DEGs and *sleuth* analyses to examine differential gene expression of the two groups: control larva vs T3 treated larva. I uploaded the output volcano plot and heatmap below. No genes were significantly differentially expressed (see volcano plot), so the top 50 genes were displayed in the heatmap.
-- [HeatMap](Heatmap_Dec.png)
-- [VolcanoPlot](Espel_volcanoplot.pdf)
 - [RNA-seq R script](RNA-seq.R)
+- [VolcanoPlot](Espel_volcanoplot.pdf)
+- [HeatMap](Heatmap_Dec.png)
 ------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
-## Tasks associated to the annotated transcriptome produced by the *de novo* assembly
+## Tasks associated to the transcriptome produced by the *de novo* assembly
 ##### The files evaluated for *de novo* assemblies (deep RNA-seq files)
 - *E. spelaea* C-29-1
 - *E. spelaea* C-30-1
@@ -154,6 +154,7 @@
     - This table delineates the two groups (*Control* vs *T3*)
  
 #### Task 11: Once you downloaded the output folder and associated text files, open up R studio. I used the script Dr. Toomey gave us in class for the DEGs and *sleuth* analyses to examine differential gene expression of the two groups: control larva vs T3 treated larva. I uploaded the output volcano plot and heatmap below. AGAIN 😢... no genes were significantly differentially expressed (see volcano plot), so the top 50 genes were displayed in the heatmap.
-- [HeatMap](deepseq_heat.png)
+- [RNA-seq R script](Deep_RNA-seq.R)
 - [VolcanoPlot](deep_Espel301.pdf)
-- [RNA-seq R script](RNA-seq.R)
+- [HeatMap](deepseq_heat.png)
+

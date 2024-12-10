@@ -1,7 +1,7 @@
 # EMILY L. BIERBAUM transcriptome project 🦎
 ## Title: Differential expression of vision related genes across ontogeny in the cave-adapted Grotto Salamander, *E. spelaea* 
 ### For this project, I wanted to evaluate statistical differences in the level of differential gene expression produced from the Bonett lab transcriptome vs a transcriptome generated from my *de novo* assembled deep RNA-seq file. The Bonett lab transcriptome has roughly ~4,300 genes, however that encompasses less than half of all genes that could be present! Thus, I decided to compare gene coverage, by *de novo* assembling and annotating one of my deep RNA-seq fastq files to serve as another transcriptome [hopefully more robust]. We want to see if the Bonett transcriptome or the newly created one better covers the breadth of differential gene expression. See image below for the project outline
-![Outline](outline.png)
+![Outline](guide.png)
 
 
 ### The sample groups I compared for differential gene expression, were eye tissues from control larva vs thyroid hormone (T3) treated larva. T3 induces metamorphosis, so I wanted to examine if this push towards metamorphosis changed the gene expression profile of vision related genes. Interestingly, the Grotto Salamander, is the only known obligate metamorphic cave species 🆒 As larva, they have functional eyes and a fully pigmented body, yet after metamorphsis when they disperse into caves, the eyes degenerate and pigmentation reduces dramatically. 

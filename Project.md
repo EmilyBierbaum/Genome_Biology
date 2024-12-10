@@ -141,7 +141,7 @@
 - [Espel_C-30-1 kallisto index sh](Espel301_kallisto_deep_index.sh)
 - [kallisto quant sbatch](kallisto_quant_deep_C301.sbatch)
 - [kallisto_quant.sh](kallisto_quant_deep_C301.sh)
-- [kallisto quant args](kallisto_quant_deep_C301.args)
+- [kallisto quant args](espel_kallisto_quant_deep.args)
 
 #### Task 10: Once again, I downloaded the output folder to my local computer that contained the reads counts and measurement variance.
 - [sed command for titles](sed_titles_deep.sh)

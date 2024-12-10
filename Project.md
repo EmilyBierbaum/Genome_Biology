@@ -22,7 +22,8 @@
 
 ## ⭐ Tasks associated to the annotated Bonett transcriptome ⭐
 #### Task 1: I evaluated the quality of my Illumina data with the `fastqc` program
-##### *E. spelaea*
+#### *E. spelaea*
+##### Control 
 - [Espel_C-29-2 fastQC sbatch](Espel_C292_fastqc.sbatch)
 - [Espel_C-29-2 fastQC sh](Espel_C292_fastqc.sh)
     - [R1 output](Espel_C292_R1_fastqc.html)
@@ -38,7 +39,8 @@
 - [Espel_C-117-2 fastQC sbatch](Espel_C1171_fastqc.sbatch)
 - [Espel_C-117-2 fastQC sh](Espel_C1171_fastqc.sh)
     - [R1 output](Espel_C1172_R1_fastqc.html)
-    - [R2 output](Espel_C1172_R2_fastqc.html)
+    - [R2 output](Espel_C1172_R2_fastqc.html) 
+##### T3 Treated
 - [Espel_T3-31-2 fastQC sbatch](Espel_T3_31_2_fastqc.sbatch)
 - [Espel_T3-31-2 fastQC sh](Espel_T3_31_2_fastqc.sh)
     - [R1 output](Espel_T3_31_2_R1_fastqc.html)

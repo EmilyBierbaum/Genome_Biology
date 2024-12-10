@@ -1,1 +1,1 @@
-seqkit replace -p "(.+)" -r '$1|{kv}' -k C61_headers.txt transcripts_emult.fasta > Emult_transcripts_annotated.fasta
+seqkit replace -p "(.+)" -r '$1|{kv}' -k C301_headers.txt transcripts_espel301.fasta > Espel_301_transcripts_annotated.fasta

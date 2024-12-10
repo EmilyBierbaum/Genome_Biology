@@ -1,18 +1,20 @@
 # EMILY L. BIERBAUM transcriptome project 🦎
 ## Title: Differential expression of vision related genes across ontogeny in the cave-adapted Grotto Salamander, *E. spelaea* 
-### First I wanted to evaluate statistical differences in the level of differential gene expression produced from the Bonett lab transcriptome vs a transcriptome generated from my *de novo* assembled deep RNA-seq file ⭐ The samples I compared for differential gene expression, were eye tissues from control larva vs thyroid hormone (T3) treated larva. T3 induces metamorphosis, so I wanted to examine if this push towards metamorphosis changed the gene expression profile of vision related genes. Interestingly, the Grotto Salamander, is the only known obligate metamorphic cave species 🆒 As larva, they have functional eyes and a fully pigmented body, yet after metamorphsis when they disperse into caves, the eyes degenerate and pigmentation reduces dramatically. 
+### First I wanted to evaluate statistical differences in the level of differential gene expression produced from the Bonett lab transcriptome vs a transcriptome generated from my *de novo* assembled deep RNA-seq file ⭐ The Bonett lab transcriptome has roughly ~4,300 genes, however that encompasses less than half of what genes could be present! Thus, I decided to compare gene coverage, by *de novo* assembling and annotating one of my deep RNA-seq fastq files to serve as another transcriptome [hopefully more robust]. We want to see if the Bonett transcriptome or the newly created one better covers the breadth of differential gene expression.
+
+### The sample groups I compared for differential gene expression, were eye tissues from control larva vs thyroid hormone (T3) treated larva. T3 induces metamorphosis, so I wanted to examine if this push towards metamorphosis changed the gene expression profile of vision related genes. Interestingly, the Grotto Salamander, is the only known obligate metamorphic cave species 🆒 As larva, they have functional eyes and a fully pigmented body, yet after metamorphsis when they disperse into caves, the eyes degenerate and pigmentation reduces dramatically. 
 
 ![Dante Fenolio](DanteFen.png)
 ###### Dante Fenolio
 
 ## Below lists the samples used for this study (3' RNA-seq files)
-##### 4 CONTROL larval specimens
+##### Four CONTROL larval specimens
 - *E. spelaea* C-29-2
 - *E. spelaea* C-116-1
 - *E. spelaea* C-116-2
 - *E. spelaea* C-117-2
 
-##### 3 T3 TREATED larval specimens
+##### Three T3 TREATED larval specimens
 - *E. spelaea* T3-31-2
 - *E. spelaea* T3-32-1
 - *E. spelaea* T3-118-1

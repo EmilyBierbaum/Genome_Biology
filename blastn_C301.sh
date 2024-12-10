@@ -1,0 +1,1 @@
+blastn -db /scratch/biol726301/BIOL7263_Genomics/sequencing_data/eurycea/blastdb/salamander_rna_db -query Espel301_transcripts_annotated.fasta -outfmt "6 qseqid sseqid stitle" -num_threads 20 -num_alignments 1 > Espel301anno_rna_blast.tsv

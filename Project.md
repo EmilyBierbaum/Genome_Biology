@@ -139,12 +139,12 @@
 #### Task 9: I used the program kallisto to align and count my reads. I made an index of the *de novo* assembly to create a reference transcriptome, then setup the kallisto quantification. For the quantification script I used the given quantification commands, newly created transcriptome index, and R1 and R2 files of each specimen. 
 - [Espel_C-30-1 kallisto index sbatch](Espel301_kallisto_deep_index.sbatch)
 - [Espel_C-30-1 kallisto index sh](Espel301_kallisto_deep_index.sh)
-- [kallisto quant sbatch](kallistodeep_quant.sbatch)
-- [kallisto_quant.sh](kallistodeep_quant.sh)
-- [kallisto quant args](kallistodeep_quant.args)
+- [kallisto quant sbatch](kallisto_quant_deep_C301.sbatch)
+- [kallisto_quant.sh](kallisto_quant_deep_C301.sh)
+- [kallisto quant args](kallisto_quant_deep_C301.args)
 
 #### Task 10: Once again, I downloaded the output folder to my local computer that contained the reads counts and measurement variance.
-- [sed command for titles](sed_titles.sh)
+- [sed command for titles](sed_titles_deep.sh)
     - These commands clean up the output file, so it can be imported into R studio
 - [Headers for R](double_header_301.txt)
     - This list contains all of the gene names, I had to duplicate the gene name in each row to make the R script work

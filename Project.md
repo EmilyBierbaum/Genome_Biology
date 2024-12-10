@@ -69,7 +69,7 @@
 - [Table](ExpTable_TTC.txt)
     - This table delineates the two groups (*Control* vs *T3 treated*)
 
-#### Task 5: Once you downloaded the output folder and associated text files, open up R studio. I used the script Dr. Toomey gave us in class for the DEGs and *sleuth* analyses to examine differential gene expression of the two groups: control larva vs T3 treated larva. I uploaded the output volcano plot and heatmap below. No genes we significantly differentially expressed (see volcano plot), so the top 50 genes were displayed in the heatmap.
+#### Task 5: Once you downloaded the output folder and associated text files, open up R studio. I used the script Dr. Toomey gave us in class for the DEGs and *sleuth* analyses to examine differential gene expression of the two groups: control larva vs T3 treated larva. I uploaded the output volcano plot and heatmap below. No genes were significantly differentially expressed (see volcano plot), so the top 50 genes were displayed in the heatmap.
 - [HeatMap](Heatmap_Dec.png)
 - [VolcanoPlot](Espel_volcanoplot.pdf)
 - [RNA-seq R script](RNA-seq.R)
@@ -109,57 +109,50 @@
 - [Espel_C-30-1 SPAdes sbatch](C301_RNA_spades.sbatch)
 - [Espel_C-30-1 SPAdes sh](C301_RNA_spades.sh)
 
-#### Task 4: After running the de novo assembly with SPAdes, I used the program QUAST to generate statistics on the assembly.
+#### Task 4: After running the de novo assembly with SPAdes, I used the program QUAST to generate statistics on the assembly. Based upon the statistics, I will be using Espel_30-1 for the following analyses. 
 - [Espel_C-29-1 QUAST sbatch](C291_RNAquast.sbatch)
 - [Espel_C-29-1 QUAST sh](C291_RNAquast.sh)
     - [Report](report_C291.txt)
 - [Espel_C-30-1 QUAST sbatch](C301_RNAquast.sbatch)
 - [Espel_C-30-1 QUAST sh](C301_RNAquast.sh)
     - [Report](report_C301.txt)
-- [Emult_C-6-1 QUAST sbatch](C61_RNAquast.sbatch)
-- [Emult_C-6-1 QUAST sh](C61_RNAquast.sh)
-    - [Report](report_C61.txt)
+
 
 #### Task 5: I used the Uniprotkb database (https://www.uniprot.org/help/uniprotkb) to download protein sequences for salamanders (20k) and frogs (465k). I unzipped the files and concatenated both into a single fasta file `cat uniprotkb_salamander.fasta uniprotkb_frog.fasta > amphibian_protein.fasta`. Then I converted the amphibian fast file into a blast database with diamond.
 - [amphibian index sbatch](mkdb_diamond.sbatch)
 - [amphibian index sh](mkdb_diamond.sh)
 
 #### Task 6: Now I can run the blast search with blastx to search RNA transcripts against amphibian protein database. This will create .tsv output files.
-- [Espel_C-29-1 blastx sbatch](diamond_blastx_C291.sbatch)
-- [Espel_C-29-1 blastx sh](diamond_blastx_C291.sh)
 - [Espel_C-30-1 blastx sbatch](diamond_blastx_C301.sbatch)
 - [Espel_C-30-1 blastx sh](diamond_blastx_C301.sh)
-- [Emult_C-6-1 blastx sbatch](diamond_blastx_C61.sbatch)
-- [Emult_C-6-1 blastx sh](diamond_blastx_C61.sh)
+
 
 #### Task 7: Next I stripped out the information of interest with the `awk` command with Toomey's script. Next we merge the header file to the transcriptome, with the replace function `seqkit`. 
-- [Emult_C-6-1 awk command](awk.sh)
-- [Emult_C-6-1 seqkit command](seqkit.sh)
+- [Espel_C-30-1 awk command](awk.sh)
+- [Espel_C-30-1 seqkit command](seqkit.sh)
 
 #### Task 8: In order to search nucleotides databases I went to NCBI and searched "caudata" and downloaded a *Pleurodeles waltl* `rna_from_genome.fna` file. I then converted this to a database, then ran a nucleotide to nucleotide blastn search of my de novo transcriptomes. This will output a `.tsv` file per specimen 😸
 - [Convert to database script](make_NCBI_database.sh)
-- [Espel_C-29-1 blastn sbatch](blastn_C291.sbatch)
 - [Espel_C-30-1 blastn sh](blastn_C301.sh)
 - [Espel_C-30-1 blastn sbatch](blastn_C301.sbatch)
-- [Espel_C-29-1 blastn sh](blastn_C291.sh)
-- [Emult_C-6-1 blastn sbatch](blastn_C61.sbatch)
-- [Emult_C-6-1 blastn sh](blastn_C61.sh)
 
-#### Task 9: I used the program Kallisto to align and count my reads. First I made an index of the Bonett lab reference transcriptome, then setup the Kallisto quantification. For the quantification script I used the given quantification commands, newly created transcriptome index, and R1 and R2 files of each specimen. Dr. Toomey taught us how to use arrays, so I did NOT have to submit 7+ scripts! It does require an 'args' file.
-- [Espel_C-29-1 kallisto index sbatch](Espel291_kallisto_deep_index.sbatch)
-- [Emult_C-29-1 kallisto index sh](Espel291_kallisto_deep_index.sh)
+
+#### Task 9: I used the program kallisto to align and count my reads. I made an index of the *de novo* assembly to create a reference transcriptome, then setup the kallisto quantification. For the quantification script I used the given quantification commands, newly created transcriptome index, and R1 and R2 files of each specimen. 
 - [Espel_C-30-1 kallisto index sbatch](Espel301_kallisto_deep_index.sbatch)
 - [Emult_C-30-1 kallisto index sh](Espel301_kallisto_deep_index.sh)
-- [Emult_C-6-1 kallisto index sbatch](Emult_kallisto_deep_index.sbatch)
-- [Emult_C-6-1 kallisto index sh](Emult_kallisto_deep_index.sh)
 - [kallisto quant sbatch](kallistodeep_quant.sbatch)
 - [kallisto_quant.sh](kallistodeep_quant.sh)
 - [kallisto quant args](kallistodeep_quant.args)
 
-#### Task 4: I downloaded the output folder to my local computer that contained the reads counts and measurement variance.
+#### Task 10: Once again, I downloaded the output folder to my local computer that contained the reads counts and measurement variance.
 - [sed command for titles](sed_titles.sh)
     - These commands clean up the output file, so it can be imported into R studio
 - [Headers for R](TTC_double_header_nocomma.txt)
     - This list contains all of the gene names, I had to duplicate the gene name in each row to make the R script work
 - [Table](ExpTable_TTC.txt)
-    - This table delineates the two groups (*E. spelaea* vs *E. multiplicata*)
+    - This table delineates the two groups (*Control* vs *T3*)
+ 
+#### Task 11: Once you downloaded the output folder and associated text files, open up R studio. I used the script Dr. Toomey gave us in class for the DEGs and *sleuth* analyses to examine differential gene expression of the two groups: control larva vs T3 treated larva. I uploaded the output volcano plot and heatmap below. AGAIN 😢... no genes were significantly differentially expressed (see volcano plot), so the top 50 genes were displayed in the heatmap.
+- [HeatMap](deepseq_heat.png)
+- [VolcanoPlot](deep_Espel301.pdf)
+- [RNA-seq R script](RNA-seq.R)

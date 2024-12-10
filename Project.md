@@ -1,6 +1,6 @@
 # EMILY L. BIERBAUM transcriptome project 🦎
 ## Title: Differential expression of vision related genes across ontogeny in the cave-adapted Grotto Salamander, *E. spelaea* 
-### First I wanted to evaluate statistical differences in the level of differential gene expression produced from the Bonett lab **Transcriptome** vs a transcriptome generated from my *de novo* assembled deep RNA-seq file ⭐ The samples I compared for differential gene expression, are eye tissues from control larva vs thyroid hormone (T3) treated larva. T3 induces metamorphosis, so I wanted to examine if this push towards metamorphosis changes the gene expression profile of vision related genes. Interestingly, the Grotto Salamander, is the only obligate metamorphic cave species 🆒 As larva, they have functional eyes and a fully pigmented body, yet after metamorphsis when they disperse into caves, the eyes degenerate and pigmentation reduces dramatically. 
+### First I wanted to evaluate statistical differences in the level of differential gene expression produced from the Bonett lab transcriptome vs a transcriptome generated from my *de novo* assembled deep RNA-seq file ⭐ The samples I compared for differential gene expression, were eye tissues from control larva vs thyroid hormone (T3) treated larva. T3 induces metamorphosis, so I wanted to examine if this push towards metamorphosis changed the gene expression profile of vision related genes. Interestingly, the Grotto Salamander, is the only known obligate metamorphic cave species 🆒 As larva, they have functional eyes and a fully pigmented body, yet after metamorphsis when they disperse into caves, the eyes degenerate and pigmentation reduces dramatically. 
 
 ![Dante Fenolio](DanteFen.png)
 ###### Dante Fenolio
@@ -75,7 +75,7 @@
 - [RNA-seq R script](RNA-seq.R)
 ------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
-## Tasks associated to the annotated transcriptome produced by *de novo* assembly
+## Tasks associated to the annotated transcriptome produced by the *de novo* assembly
 ##### The files evaluated for *de novo* assemblies (deep RNA-seq files)
 - *E. spelaea* C-29-1
 - *E. spelaea* C-30-1
@@ -92,7 +92,7 @@
     - [R1 output](Espel_C301_R1_fastqc.html)
     - [R2 output](Espel_C301_R2_fastqc.html)
  
-#### Task 2: I trimmed and filtered my deep RNA-seq data by the removal of low quality reads and adpators.
+#### Task 2: I trimmed and filtered my deep RNA-seq data by the removal of low quality reads and adaptors.
 - [Espel_C-29-1 trim sbatch](espel_trim_291.sbatch)
 - [Espel_C-29-1 trim sh](espel_trim_291.sh)
     - [R1 output](trimmed_reads291_val_R1_fastqc.html)
@@ -106,8 +106,10 @@
 #### Task 3: The program SPAdes was used in RNA mode to *de novo* assemble my trimmed RNA-seq data. This will produce a transcript.fasta instead of a contig.fasta.
 - [Espel_C-29-1 SPAdes sbatch](C291_RNA_spades.sbatch)
 - [Espel_C-29-1 SPAdes sh](C291_RNA_spades.sh)
+      - [Espel_C-29-1 transcript.fasta](transcripts_espel291.fasta)
 - [Espel_C-30-1 SPAdes sbatch](C301_RNA_spades.sbatch)
 - [Espel_C-30-1 SPAdes sh](C301_RNA_spades.sh)
+     - [Espel_C-30-1 transcript.fasta](transcripts_espel301.fasta)
 
 #### Task 4: After running the de novo assembly with SPAdes, I used the program QUAST to generate statistics on the assembly. Based upon the statistics, I will be using Espel_30-1 for the following analyses. 
 - [Espel_C-29-1 QUAST sbatch](C291_RNAquast.sbatch)
@@ -122,7 +124,7 @@
 - [amphibian index sbatch](mkdb_diamond.sbatch)
 - [amphibian index sh](mkdb_diamond.sh)
 
-#### Task 6: Now I can run the blast search with blastx to search RNA transcripts against amphibian protein database. This will create .tsv output files.
+#### Task 6: Now I can run the blast search with blastx to search RNA transcripts against amphibian protein database. This will create `.tsv` output files.
 - [Espel_C-30-1 blastx sbatch](diamond_blastx_C301.sbatch)
 - [Espel_C-30-1 blastx sh](diamond_blastx_C301.sh)
 
@@ -131,11 +133,10 @@
 - [Espel_C-30-1 awk command](awk.sh)
 - [Espel_C-30-1 seqkit command](seqkit.sh)
 
-#### Task 8: In order to search nucleotides databases I went to NCBI and searched "caudata" and downloaded a *Pleurodeles waltl* `rna_from_genome.fna` file. I then converted this to a database, then ran a nucleotide to nucleotide blastn search of my de novo transcriptomes. This will output a `.tsv` file per specimen 😸
+#### Task 8: In order to search nucleotides databases I went to NCBI and searched "caudata" and downloaded a *Pleurodeles waltl* `rna_from_genome.fna` file. I then converted this to a database, then ran a nucleotide to nucleotide blastn search of my *de novo* transcriptome. This will output a `.tsv` file per specimen 😸
 - [Convert to database script](make_NCBI_database.sh)
 - [Espel_C-30-1 blastn sh](blastn_C301.sh)
 - [Espel_C-30-1 blastn sbatch](blastn_C301.sbatch)
-
 
 #### Task 9: I used the program kallisto to align and count my reads. I made an index of the *de novo* assembly to create a reference transcriptome, then setup the kallisto quantification. For the quantification script I used the given quantification commands, newly created transcriptome index, and R1 and R2 files of each specimen. 
 - [Espel_C-30-1 kallisto index sbatch](Espel301_kallisto_deep_index.sbatch)

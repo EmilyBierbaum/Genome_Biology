@@ -177,8 +177,8 @@
 ### Performance of the Bonett vs *de novo* transcriptome
 #### When comparing the alignment rates between the two transcriptomes, the *de novo* assembly transcriptome had over 81,000 targets with 30-40% alignment. Whereas the Bonett transcriptome only had 4,733 targets with a 10-20% alginment (see files below for specifics). However, even though the *de novo* transcriptome had better statistics from the `.json` output files, the gene alignments generated came up as unknown when blast searched. I believe this is from the nucleotide sequences of *Eurycea* being too diverged from *Pleurodeles*. If I reran these analyses I would translate the nucleotide sequences into amino acids, to see if there is more conservation of the genes at the amino acid level.
 
-- [Bonett transcriptome alignment rates](3' alignment data.txt)
-- [De novo assembly alignment rates](de novo alignment data.txt)
+- [Bonett transcriptome alignment rates](3_alignment_data.txt)
+- [De novo assembly alignment rates](de_novo_alignment_data.txt)
 
 ### Troubles: Unfortunately salamanders do NOT have annotated genomes readily available so the *Pleurodeles* genome used above is very divergent from the species I examined. `Kallisto` also outputs TPM, which can be imported into R Studio for RNA-seq analyses with *sleuth*. TPM (aka transripts per kilobase million) accounts for sequencing depth and gene length. However I am using 3' RNA-seq data, which are short-reads and gene length is not a necessary factor. I believe outputting the data as read counts and using DESeq2 for RNA-seq analyses better suits 3' RNA-seq data. It also accounts for sequencing depth, BUT also RNA composition. Refer to https://hbctraining.github.io/DGE_workshop/lessons/02_DGE_count_normalization.html for more information.
 ![image](https://github.com/user-attachments/assets/66d35fc0-f3ac-41d9-bc6d-a7be8ebda643)

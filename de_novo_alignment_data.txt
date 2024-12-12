@@ -1,0 +1,64 @@
+De novo assembly transcriptome:
+
+Espel_C-29-2
+	"n_targets": 81625,
+	"n_bootstraps": 50,
+	"n_processed": 10400723,
+	"n_pseudoaligned": 4637116,
+	"n_unique": 3314958,
+	"p_pseudoaligned": 44.6,
+	"p_unique": 31.9,
+
+Espel_C-116-1
+	"n_targets": 81625,
+	"n_bootstraps": 50,
+	"n_processed": 10279446,
+	"n_pseudoaligned": 3674896,
+	"n_unique": 2160396,
+	"p_pseudoaligned": 35.7,
+	"p_unique": 21.0,
+
+Espel_C-116-2
+"n_targets": 81625,
+	"n_bootstraps": 50,
+	"n_processed": 18604653,
+	"n_pseudoaligned": 6415909,
+	"n_unique": 4540529,
+	"p_pseudoaligned": 34.5,
+	"p_unique": 24.4,
+
+Espel_C-117-2
+"n_targets": 81625,
+	"n_bootstraps": 50,
+	"n_processed": 5301419,
+	"n_pseudoaligned": 1614767,
+	"n_unique": 1044767,
+	"p_pseudoaligned": 30.5,
+	"p_unique": 19.7,
+
+Espel_T3-31-2
+	"n_targets": 81625,
+	"n_bootstraps": 50,
+	"n_processed": 7894305,
+	"n_pseudoaligned": 3854211,
+	"n_unique": 3293044,
+	"p_pseudoaligned": 48.8,
+	"p_unique": 41.7,
+
+Espel_T3-32-1
+	"n_targets": 81625,
+	"n_bootstraps": 50,
+	"n_processed": 7762072,
+	"n_pseudoaligned": 3147728,
+	"n_unique": 1694567,
+	"p_pseudoaligned": 40.6,
+	"p_unique": 21.8,
+
+Espel_T3-118-1
+	"n_targets": 81625,
+	"n_bootstraps": 50,
+	"n_processed": 17017515,
+	"n_pseudoaligned": 6753024,
+	"n_unique": 3401515,
+	"p_pseudoaligned": 39.7,
+	"p_unique": 20.0,

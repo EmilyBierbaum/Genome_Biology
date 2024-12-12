@@ -78,7 +78,7 @@
 
 #### Task 5: After you download the output folder and associated text files, open up R studio. I used the script Dr. Toomey gave us in class for the `DEGs` and *sleuth* analyses to examine differential gene expression of the two groups: *control larva* vs *T3 treated larva*. I uploaded the output volcano plot and heatmap below. No genes were significantly differentially expressed (see volcano plot), so the top 50 genes were displayed in the heatmap.
 - [3' RNA-seq R script](RNA-seq.R)
-- ![VolcanoPlot](Espel_volcanoplot.pdf)
+- ![VolcanoPlot](Espel_volcanoplot.pdf) 
 - ![HeatMap](Heatmap_Dec.png)
 ------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
@@ -161,7 +161,7 @@
  
 #### Task 11: After you download the output folder and associated text files, open up R studio. I used the script Dr. Toomey gave us in class for the DEGs and *sleuth* analyses to examine differential gene expression of the two groups: *control larva* vs *T3 treated larva*. I uploaded the output volcano plot and heatmap below. AGAIN 😢... no genes were significantly differentially expressed (see volcano plot), so the top 50 genes were displayed in the heatmap.
 - [Deep RNA-seq R script](Deep_RNA-seq.R)
-- ![VolcanoPlot](deep_Espel301.pdf)
+- ![VolcanoPlot](deep_Espel301.pdf) 
 - ![HeatMap](deepseq_heat.png)
 
 ### Troubles: Unfortunately salamanders do NOT have annotated genomes readily available so the *Pleurodeles* genome used above is very divergent from the species I examined. `Kallisto` also outputs TPM, which can be imported into R Studio for RNA-seq analyses with *sleuth*. TPM (aka transripts per kilobase million) accounts for sequencing depth and gene length. However I am using 3' RNA-seq data, which are short-reads and gene length is not a necessary factor. I believe outputting the data as read counts and using DESeq2 for RNA-seq analyses better suits 3' RNA-seq data. It also accounts for sequencing depth, BUT also RNA composition. Refer to https://hbctraining.github.io/DGE_workshop/lessons/02_DGE_count_normalization.html for more information.

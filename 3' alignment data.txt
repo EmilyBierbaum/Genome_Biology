@@ -1,0 +1,65 @@
+Bonett transcriptome:
+
+Espel_C-29-2
+	"n_targets": 4733,
+	"n_bootstraps": 50,
+	"n_processed": 10400723,
+	"n_pseudoaligned": 1969548,
+	"n_unique": 1873070,
+	"p_pseudoaligned": 18.9,
+	"p_unique": 18.0,
+
+
+Espel_C-116-1
+	"n_targets": 4733,
+	"n_bootstraps": 50,
+	"n_processed": 10279446,
+	"n_pseudoaligned": 1154422,
+	"n_unique": 1024883,
+	"p_pseudoaligned": 11.2,
+	"p_unique": 10.0,
+
+Espel_C-116-2
+	"n_targets": 4733,
+	"n_bootstraps": 50,
+	"n_processed": 18604653,
+	"n_pseudoaligned": 2497232,
+	"n_unique": 2253144,
+	"p_pseudoaligned": 13.4,
+	"p_unique": 12.1,
+
+Espel_C-117-2
+	"n_targets": 4733,
+	"n_bootstraps": 50,
+	"n_processed": 5301419,
+	"n_pseudoaligned": 710145,
+	"n_unique": 598897,
+	"p_pseudoaligned": 13.4,
+	"p_unique": 11.3,
+
+Espel_T3-31-2
+	"n_targets": 4733,
+	"n_bootstraps": 50,
+	"n_processed": 7894305,
+	"n_pseudoaligned": 1835329,
+	"n_unique": 1770427,
+	"p_pseudoaligned": 23.2,
+	"p_unique": 22.4,
+
+Espel_T3-32-1
+	"n_targets": 4733,
+	"n_bootstraps": 50,
+	"n_processed": 7762072,
+	"n_pseudoaligned": 1020987,
+	"n_unique": 969308,
+	"p_pseudoaligned": 13.2,
+	"p_unique": 12.5,
+
+Espel_T3-118-1
+	"n_targets": 4733,
+	"n_bootstraps": 50,
+	"n_processed": 17017515,
+	"n_pseudoaligned": 2248221,
+	"n_unique": 2133841,
+	"p_pseudoaligned": 13.2,
+	"p_unique": 12.5,

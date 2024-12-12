@@ -79,8 +79,10 @@
 #### Task 5: After you download the output folder and associated text files, open up R studio. I used the script Dr. Toomey gave us in class for the `DEGs` and *sleuth* analyses to examine differential gene expression of the two groups: *control larva* vs *T3 treated larva*. I uploaded the output volcano plot and heatmap below. No genes were significantly differentially expressed (see volcano plot), so the top 50 genes were displayed in the heatmap.
 - [3' RNA-seq R script](RNA-seq.R)
 #### Volcano plot
+##### No significant differences 😫
 ![VolcanoPlot](Espel_3'_volcano.png)
 #### Heatmap
+##### Anamorsin was the only eye-related gene in the heatmap. It prevents apoptosis
 ![HeatMap](Heatmap_Dec.png)
 ------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
@@ -164,9 +166,19 @@
 #### Task 11: After you download the output folder and associated text files, open up R studio. I used the script Dr. Toomey gave us in class for the DEGs and *sleuth* analyses to examine differential gene expression of the two groups: *control larva* vs *T3 treated larva*. I uploaded the output volcano plot and heatmap below. AGAIN 😢... no genes were significantly differentially expressed (see volcano plot), so the top 50 genes were displayed in the heatmap.
 - [Deep RNA-seq R script](Deep_RNA-seq.R)
 #### Volcano plot
+##### No significant differences... but the total variables increased from 2992 to 3518 😎
 ![VolcanoPlot](Espel301deep.png)
 #### Heatmap
+##### Rod transducin alpha-subunit and the interphotoreceptor matrix gene were upregulated in the control larva. Rod transducin is involved in the phototransduction pathway, and the interphotoreceptor gene maintains the viability of photoreceptor cells.
 ![HeatMap](deepseq_heat.png)
+
+----------------------------------------------------------------------------------------------
+## Concluding Remarks
+### Performance of the Bonett vs *de novo* transcriptome
+#### When comparing the alignment rates between the two transcriptomes, the *de novo* assembly transcriptome had over 81,000 targets with 30-40% alignment. Whereas the Bonett transcriptome only had 4,733 targets with a 10-20% alginment (see files below for specifics). However, even though the *de novo* transcriptome had better statistics from the `.json` output files, the gene alignments generated came up as unknown when blast searched. I believe this is from the nucleotide sequences of *Eurycea* being too diverged from *Pleurodeles*. If I reran these analyses I would translate the nucleotide sequences into amino acids, to see if there is more conservation of the genes at the amino acid level.
+
+- [Bonett transcriptome alignment rates](3' alignment data.txt)
+- [De novo assembly alignment rates](de novo alignment data.txt)
 
 ### Troubles: Unfortunately salamanders do NOT have annotated genomes readily available so the *Pleurodeles* genome used above is very divergent from the species I examined. `Kallisto` also outputs TPM, which can be imported into R Studio for RNA-seq analyses with *sleuth*. TPM (aka transripts per kilobase million) accounts for sequencing depth and gene length. However I am using 3' RNA-seq data, which are short-reads and gene length is not a necessary factor. I believe outputting the data as read counts and using DESeq2 for RNA-seq analyses better suits 3' RNA-seq data. It also accounts for sequencing depth, BUT also RNA composition. Refer to https://hbctraining.github.io/DGE_workshop/lessons/02_DGE_count_normalization.html for more information.
 ![image](https://github.com/user-attachments/assets/66d35fc0-f3ac-41d9-bc6d-a7be8ebda643)
